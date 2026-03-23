@@ -1,0 +1,12 @@
+# Hugo Standard-Build-Verzeichnis
+public/
+
+# Ressourcen-Cache (wird beim Build auf GitHub Actions neu erstellt)
+resources/
+
+# Temporäre Sperrdatei von Hugo
+.hugo_build.lock
+
+# Lokale Umgebungsvariablen oder OS-spezifische Dateien
+.DS_Store
+thumbs.db

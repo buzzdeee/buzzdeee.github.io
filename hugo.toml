@@ -5,7 +5,7 @@ baseURL = "https://buzzdeee.reitenba.ch"
 theme = "LoveIt"
 # themes directory
 # 主题目录
-themesDir = "themes/LoveIt"
+themesDir = "themes"
 
 # website title
 # 网站标题
@@ -880,7 +880,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "About"
         url = "/about/"
         title = ""
-      [[languages.en.menu.main]]
+      [[languages.de.menu.main]]
         weight = 6
         identifier = "github"
         pre = "<i class='fab fa-github' aria-hidden='true'></i>"
@@ -888,48 +888,6 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = ""
         url = "https://github.com/dillonzq/LoveIt"
         title = "GitHub"
-    [languages.en.params]
-      [languages.en.params.search]
-        enable = true
-        type = "algolia"
-        contentLength = 4000
-        placeholder = ""
-        maxResultLength = 10
-        snippetLength = 30
-        highlightTag = "em"
-        absoluteURL = false
-        [languages.en.params.search.algolia]
-          index = "index"
-          appID = "4D1IDY8JU6"
-          searchKey = "05332ac5ed76655a511f0da583a9afac"
-      [languages.en.params.home]
-        rss = 10
-        [languages.en.params.home.profile]
-          enable = true
-          gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
-          title = ""
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
-          typeit = true
-          social = true
-          disclaimer = ""
-      [languages.en.params.social]
-        GitHub = "xxxx"
-        X = "xxxx"
-        Linkedin = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
-        Telegram = "xxxx"
-        Youtubelegacy = "xxxx"
-        HuggingFace = "xxxx"
-        LeetCode = "xxxx"
-        Threads = "xxxx"
-        Phone = "555-555-555"
-        Email = "xxxx@xxxx.com"
-        RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
 
   [languages.en]
     weight = 1
@@ -986,45 +944,3 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = ""
         url = "https://github.com/dillonzq/LoveIt"
         title = "GitHub"
-    [languages.en.params]
-      [languages.en.params.search]
-        enable = true
-        type = "algolia"
-        contentLength = 4000
-        placeholder = ""
-        maxResultLength = 10
-        snippetLength = 30
-        highlightTag = "em"
-        absoluteURL = false
-        [languages.en.params.search.algolia]
-          index = "index"
-          appID = "4D1IDY8JU6"
-          searchKey = "05332ac5ed76655a511f0da583a9afac"
-      [languages.en.params.home]
-        rss = 10
-        [languages.en.params.home.profile]
-          enable = true
-          gravatarEmail = ""
-          avatarURL = "/images/avatar.png"
-          title = ""
-          subtitle = "A Clean, Elegant but Advanced Hugo Theme"
-          typeit = true
-          social = true
-          disclaimer = ""
-      [languages.en.params.social]
-        GitHub = "xxxx"
-        X = "xxxx"
-        Linkedin = "xxxx"
-        Instagram = "xxxx"
-        Facebook = "xxxx"
-        Telegram = "xxxx"
-        Youtubelegacy = "xxxx"
-        HuggingFace = "xxxx"
-        LeetCode = "xxxx"
-        Threads = "xxxx"
-        Phone = "555-555-555"
-        Email = "xxxx@xxxx.com"
-        RSS = true
-        [languages.en.params.social.Mastodon]
-          id = "@xxxx"
-          prefix = "https://mastodon.technology/"
