@@ -1,11 +1,11 @@
-baseURL = "https://example.com"
+baseURL = "https://buzzdeee.reitenba.ch"
 
 # theme
 # 主题
 theme = "LoveIt"
 # themes directory
 # 主题目录
-themesDir = "../.."
+themesDir = "themes/LoveIt"
 
 # website title
 # 网站标题
