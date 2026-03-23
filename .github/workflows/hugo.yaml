@@ -11,6 +11,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v6
+        with:
+          submodules: recursive
+          fetch-depth: 0
 
       - name: Deploy the site
         uses: benmatselby/hugo-deploy-gh-pages@main
@@ -20,4 +23,4 @@ jobs:
           TARGET_BRANCH: main
           TOKEN: ${{ secrets.TOKEN }}
           HUGO_ARGS: '-t academic'
-          CNAME: buzzdeee.github.io
+          CNAME: buzzdeee.reitenba.ch
