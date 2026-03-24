@@ -108,7 +108,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   # Author config
   # 作者配置
   [params.author]
-    name = "xxxx"
+    name = "buzzdeee"
     email = ""
     link = ""
 
@@ -510,7 +510,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # Comment config
     # 评论系统设置
     [params.page.comment]
-      enable = true
+      enable = false
       # Disqus comment config (https://disqus.com/)
       # Disqus 评论系统设置 (https://disqus.com/)
       [params.page.comment.disqus]
@@ -830,7 +830,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     copyright = "Der Inhalt dieser Seite ist lizensiert unter Creative Commons Attribution-NonCommercial 4.0 International License."
     title = "buzzdeee | Blog & Projects"
     [languages.de.params.home.profile]
-      title = "Sebastian"
+      title = "buzzdeee"
       subtitle = "OpenBSD Ports Maintainer | Security Enthusiast | Freestyle Skater"
     [languages.de.menu]
       [[languages.de.menu.main]]
@@ -890,7 +890,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License."
     title = "buzzdeee | Blog & Projects"
     [languages.en.params.home.profile]
-      title = "Sebastian"
+      title = "buzzdeee"
       subtitle = "OpenBSD Ports Maintainer | Security Enthusiast | Freestyle Skater"
     [languages.en.menu]
       [[languages.en.menu.main]]
