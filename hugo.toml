@@ -857,14 +857,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "Kategorien"
         url = "/categories/"
         title = ""
-      [[languages.de.menu.main]]
-        weight = 4
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
+#      [[languages.de.menu.main]]
+#        weight = 4
+#        identifier = "documentation"
+#        pre = ""
+#        post = ""
+#        name = "Docs"
+#        url = "/categories/documentation/"
+#        title = ""
       [[languages.de.menu.main]]
         weight = 5
         identifier = "about"
@@ -917,14 +917,14 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         name = "Categories"
         url = "/categories/"
         title = ""
-      [[languages.en.menu.main]]
-        weight = 4
-        identifier = "documentation"
-        pre = ""
-        post = ""
-        name = "Docs"
-        url = "/categories/documentation/"
-        title = ""
+#      [[languages.en.menu.main]]
+#        weight = 4
+#        identifier = "documentation"
+#        pre = ""
+#        post = ""
+#        name = "Docs"
+#        url = "/categories/documentation/"
+#        title = ""
       [[languages.en.menu.main]]
         weight = 5
         identifier = "about"
