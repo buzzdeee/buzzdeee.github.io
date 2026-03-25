@@ -66,9 +66,13 @@ Nimm in GitHub folgende Einstellungen vor, um deine Seite zu veröffentlichen:
 1. **Repository erstellen**: Falls noch nicht geschehen, erstelle ein neues Repository. Benutze dabei das Schema [Dein-GitHub-Username].github.io.
 
 2. **GitHub Pages konfigurieren**: Navigiere in den Repository-Einstellungen zum Menüpunkt Pages und trage dort folgende Details ein:
-  * **Build and deployment**: Wähle unter *Source* die Option **GitHub Actions** aus.
-  * **Custom Domain**: Wenn du deine eigene Domain nutzen möchtest, trage hier deinen Hostnamen (z. B. `buzzdeee.reitenba.ch`) ein und bestätige mit **Save**. Der DNS-Check sollte nach wenigen Augenblicken erfolgreich abgeschlossen sein.
-  3. *Enforce HTTPS*: Aktiviere diese Checkbox, um sicherzustellen, dass deine Seite verschlüsselt und ausschließlich über HTTPS erreichbar ist.
+    * **Build and deployment**: Wähle unter *Source* die Option **GitHub Actions** aus.
+    * **Custom Domain**: Wenn du deine eigene Domain nutzen möchtest, trage hier deinen Hostnamen (z. B. `buzzdeee.reitenba.ch`) ein und bestätige mit **Save**. Der DNS-Check sollte nach wenigen Augenblicken erfolgreich abgeschlossen sein.
+    * **Enforce HTTPS**: Aktiviere diese Checkbox, um sicherzustellen, dass deine Seite verschlüsselt und ausschließlich über HTTPS erreichbar ist.
+
+{{< admonition type="info" open=true >}}
+**Hinweis**: Die `Enforce HTTPS` Checkbox kann erst nach dem ersten Deployment aktiviert werden!
+{{< /admonition >}}
 
 Deine Einstellungen sollten anschließend wie in diesem Beispiel aussehen:
 
@@ -323,7 +327,7 @@ avatarURL = "/images/avatar.png"
 {{< /admonition>}}
 
 {{< admonition type="tip" title="Speicherort für Bilder" open=true >}}
-Statischer Content wie Bilder gehört in das Verzeichnis ./static/. Das Avatar-Bild sollte also unter ./static/images/avatar.png abgelegt werden. Hugo macht es beim Build-Prozess dann unter /images/avatar.png verfügbar.
+Statischer Content wie Bilder gehört in das Verzeichnis `./static/`. Das Avatar-Bild sollte also unter `./static/images/avatar.png` abgelegt werden. Hugo macht es beim Build-Prozess dann unter `/images/avatar.png` verfügbar.
 {{< /admonition >}}
 
 ## Favicon
@@ -484,6 +488,7 @@ Jetzt ist alles vorbereitet, um deine Seite live zu schalten. Mit den folgenden 
 {{< highlight shell "linenos=table" >}}
 git add .
 git commit -m "Initialer Commit der Hugo-Seite"
+git remote add origin git@github.com:buzzdeee/buzzdeee.github.io.git
 git push -u origin main
 {{< /highlight >}}
 

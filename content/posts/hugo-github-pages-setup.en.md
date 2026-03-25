@@ -72,6 +72,11 @@ Configure the following settings in GitHub to publish your site:
 
   * **Enforce HTTPS**: Enable this checkbox to ensure that your site is encrypted and accessible exclusively via HTTPS.
 
+{{< admonition type="info" open=true >}}
+**Note**: The checkbox *Enforce HTTPS* is deactivated in the beginning, it will become active **after** first run of the workflow.
+{{< /admonition >}}
+
+
 Your settings should then look like the following example:
 
 {{< figure
@@ -488,6 +493,7 @@ Everything is now prepared to take your site live. Use the following commands to
 {{< highlight shell "linenos=table" >}}
 git add .
 git commit -m "Initial commit of the Hugo site"
+git remote add origin git@github.com:buzzdeee/buzzdeee.github.io.git
 git push -u origin main
 {{< /highlight >}}
 
