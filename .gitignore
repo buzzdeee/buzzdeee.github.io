@@ -4,7 +4,7 @@ public/
 # Ressourcen-Cache (wird beim Build auf GitHub Actions neu erstellt)
 resources/
 
-# Temporäre Sperrdatei von Hugo
+# temporary lockfile
 .hugo_build.lock
 
 # Lokale Umgebungsvariablen oder OS-spezifische Dateien
