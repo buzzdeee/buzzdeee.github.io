@@ -2,7 +2,7 @@
 title: "Modernes Blogging: Hugo, GitHub Pages und eine eigene Domain"
 date: 2026-03-23
 description: "Ein Leitfaden für IT-Enthusiasten: Von der lokalen Installation unter OpenBSD bis zum automatisierten Deployment via GitHub Actions."
-tags: ["Hugo", "GitHub Pages", "OpenBSD", "DevOps"]
+tags: ["Hugo", "LoveIt", "GitHub Pages", "OpenBSD", "DevOps", "Tutorial"]
 categories: ["Tutorials"]
 featuredImage: "/images/hugo-github-setup.png"
 ---
