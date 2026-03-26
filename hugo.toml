@@ -380,6 +380,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Bluesky = ""
     Email = ""
     RSS = ""
+    Kofi = "buzzdeee"
+    Liberapay = "buzzdeee"
 
   # Page global config
   # 文章页面全局配置
