@@ -36,7 +36,7 @@ math:
 share:
   enable: true
 comment:
-  enable: true
+  enable: false
 ---
 
 ## Why bother?
