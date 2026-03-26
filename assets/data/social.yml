@@ -647,7 +647,7 @@ leetcode:
 # 082: Ko-Fi
 kofi:
   Weight: 39
-  Title: Ko-Fil
+  Title: Ko-Fi
   Prefix: https://ko-fi.com/
   Icon:
     Class: fa-brands fa-ko-fi
