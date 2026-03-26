@@ -646,7 +646,7 @@ leetcode:
 
 # 082: Ko-Fi
 kofi:
-  Weight: 82
+  Weight: 39
   Title: Ko-Fil
   Prefix: https://ko-fi.com/
   Icon:
@@ -654,11 +654,19 @@ kofi:
 
 # 083: Liberapay
 liberapay:
-  Weight: 82
+  Weight: 37
   Title: Liberapay
   Prefix: https://liberapay.com/
   Icon:
     Simpleicons: liberapay
+
+# 084: Credly
+credly:
+  Weight: 82
+  Title: Credly
+  Prefix: https://www.credly.com/users/
+  Icon:
+    Simpleicons: credly
 
 # Phone
 phone:
