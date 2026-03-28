@@ -668,6 +668,14 @@ credly:
   Icon:
     Simpleicons: credly
 
+# 084: Gravatar
+gravatar:
+  Weight: 83
+  Title: Gravatar
+  Prefix: https://gravatar.com/
+  Icon:
+    Simpleicons: gravatar
+
 # Phone
 phone:
   Weight: 98

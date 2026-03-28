@@ -372,6 +372,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Kofi = "buzzdeee"
     Liberapay = "buzzdeee"
     Credly = "sebastian-reitenbach"
+    Gravatar = "buzzdeee"
 
   # Page global config
   # 文章页面全局配置
