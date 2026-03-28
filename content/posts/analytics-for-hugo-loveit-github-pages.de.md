@@ -38,7 +38,7 @@ math:
 share:
   enable: true
 comment:
-  enable: true
+  enable: false
 seo:
   images: ["/images/goat-watching-website-stats.png"]
 ---
