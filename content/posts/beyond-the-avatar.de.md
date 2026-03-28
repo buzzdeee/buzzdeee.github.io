@@ -39,7 +39,7 @@ mapbox:
 share:
   enable: true
 comment:
-  enable: true
+  enable: false
 library:
   css:
   js:
