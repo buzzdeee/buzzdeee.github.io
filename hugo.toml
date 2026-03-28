@@ -701,7 +701,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.analytics.yandexMetrica]
       id = ""
     [params.analytics.goatCounter]
-      code = ""
+      code = "buzzdeee"
 
 
   # Cookie consent config
