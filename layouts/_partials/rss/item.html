@@ -43,4 +43,9 @@
     <shortdesc>
         {{ .Page.Params.description }}
     </shortdesc>
+    <image>
+      {{ with .Params.featuredImage }}
+        {{ . | absURL }}
+      {{ end }}
+    </image>
 </item>
