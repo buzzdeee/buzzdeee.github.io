@@ -673,6 +673,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # Analytics config
   [params.analytics]
+    enable = true
     # Google Analytics
     [params.analytics.google]
       id = "G-KJ8MQN6W5X"
