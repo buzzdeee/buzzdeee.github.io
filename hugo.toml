@@ -573,15 +573,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         enable = true
         repo = "buzzdeee/buzzdeee.github.io"
         repoId = "R_kgDORuOd8w"
-        category = "General"
-        categoryId = "DIC_kwDORuOd884C5i49"
+        category = "Announcements"
+        categoryId = "DIC_kwDORuOd884C5i48"
         # automatically adapt the current theme i18n configuration when empty
         lang = ""
         mapping = "pathname"
         reactionsEnabled = "1"
         emitMetadata = "0"
         inputPosition = "bottom"
-        lazyLoading = false
+        lazyLoading = true
         lightTheme = "light"
         darkTheme = "dark"
       # Waline comment config (https://waline.js.org/)
