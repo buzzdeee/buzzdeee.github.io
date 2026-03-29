@@ -11,7 +11,7 @@ license: "MIT"
 images: [ "/images/goat-watching-website-stats.png" ]
 
 tags: ["Hugo", "LoveIt", "Analytics", "GoatCounter", "Privacy", "Google Analytics"]
-categories: ["Tutorials", "Web Development"]
+categories: ["Tutorials"]
 
 featuredImage: "/images/goat-watching-website-stats.png"
 featuredImagePreview: "/images/goat-watching-website-stats.png"

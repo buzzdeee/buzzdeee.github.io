@@ -11,7 +11,7 @@ license: "MIT"
 images: [ "/images/gravatar_2026.png" ]
 
 tags: ["Gravatar", "Digitale Identität", "Webentwicklung", "Datenschutz", "Open Source"]
-categories: ["Tutorials"]
+categories: ["Reviews"]
 
 featuredImage: "/images/gravatar_2026.png"
 featuredImagePreview: "/images/gravatar_2026.png"
