@@ -103,7 +103,7 @@ By centralizing these links, Gravatar acts as a "pointer" in the API. When a pla
 
 While WordPress remains its primary host, Gravatar’s reach is defined by its adoption as a fallback identity layer across developer and collaboration tools. Its utility is most visible in three specific sectors:
 
-* **Development Platforms**: Gravatar is a standard in version control. **GitHub**, **GitLab**, and **Bitbucket** use email hashes to associate contributor photos with commits and pull requests. Similarly, Stack Overflow relies on it for user identification in technical Q&A.
+* **Development Platforms**: Gravatar is a standard in version control. **GitHub**, **GitLab**, and **Bitbucket** use email hashes to associate contributor photos with commits and pull requests.
 
 * **Productivity & SaaS**: Professional tools like **Slack**, **Trello**, **Atlassian (Jira)**, and **Figma** often leverage Gravatar to automate user onboarding, pulling existing avatars the moment a new account is created via email.
 

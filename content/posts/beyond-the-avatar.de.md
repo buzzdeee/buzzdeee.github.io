@@ -86,7 +86,7 @@ Durch die Zentralisierung dieser Links fungiert Gravatar als „Pointer“ (Zeig
 
 Obwohl WordPress weiterhin der Hauptgastgeber ist, definiert sich die Reichweite von Gravatar vor allem durch seine Rolle als Identitäts-Fallback für Entwickler- und Kollaborations-Tools. Der Nutzen zeigt sich besonders in drei spezifischen Bereichen:
 
-* **Entwickler-Plattformen**: Gravatar ist ein Standard in der Versionskontrolle. **GitHub**, **GitLab** und **Bitbucket** nutzen E-Mail-Hashes, um Profilbilder von Mitwirkenden mit Commits und Pull-Requests zu verknüpfen. Auch **Stack Overflow** setzt bei der Identifizierung von Nutzern in technischen Q&A-Bereichen darauf.
+* **Entwickler-Plattformen**: Gravatar ist ein Standard in der Versionskontrolle. **GitHub**, **GitLab** und **Bitbucket** nutzen E-Mail-Hashes, um Profilbilder von Mitwirkenden mit Commits und Pull-Requests zu verknüpfen.
 * **Produktivität & SaaS**: Professionelle Tools wie **Slack**, **Trello**, **Atlassian (Jira)** und **Figma** nutzen Gravatar häufig, um das Onboarding neuer Nutzer zu automatisieren. Bestehende Avatare werden in dem Moment geladen, in dem ein neues Konto per E-Mail erstellt wird.
 * **Kommunikations-Ebenen**: Der Dienst bildet die Identitätsgrundlage für Drittanbieter-Kommentarsysteme wie **Disqus** und ist in verschiedene E-Mail-Clients (z. B. **Fastmail**) integriert, um Absender-Icons direkt im Posteingang anzuzeigen.
 
