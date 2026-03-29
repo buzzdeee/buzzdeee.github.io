@@ -33,8 +33,10 @@ toc:
 code:
   copy: true
   maxShownLines: 50
+share:
+  enable: true
 comment:
-  enable: false
+  enable: true
 math:
   enable: false
 seo:

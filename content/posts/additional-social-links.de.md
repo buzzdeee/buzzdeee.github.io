@@ -40,7 +40,7 @@ share:
   enable: true
   # ...
 comment:
-  enable: false
+  enable: true
   # ...
 library:
   css:
