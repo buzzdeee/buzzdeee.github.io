@@ -11,7 +11,7 @@ license: "MIT"
 images: [ "/images/robust-discord-server-setup.png" ]
 
 tags: [ "Discord", "Security", "Community", "Tutorial", "HowTo" ]
-categories: [ "Tutorials", "Community" ]
+categories: [ "Tutorials" ]
 
 featuredImage: "/images/robust-discord-server-setup.png"
 featuredImagePreview: "/images/robust-discord-server-setup.png"

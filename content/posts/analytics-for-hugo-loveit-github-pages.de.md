@@ -10,8 +10,8 @@ description: "Ein umfassender Leitfaden zur Auswahl und Integration von Analytic
 license: "MIT"
 images: [ "/images/goat-watching-website-stats.png" ]
 
-tags: ["Hugo", "LoveIt", "Analytics", "GoatCounter", "Datenschutz", "Google Analytics"]
-categories: ["Tutorials", "Webentwicklung"]
+tags: ["Hugo", "LoveIt", "Analytics", "GoatCounter", "Datenschutz", "Google Analytics", "Webentwicklung"]
+categories: ["Tutorials"]
 
 featuredImage: "/images/goat-watching-website-stats.png"
 featuredImagePreview: "/images/goat-watching-website-stats.png"
