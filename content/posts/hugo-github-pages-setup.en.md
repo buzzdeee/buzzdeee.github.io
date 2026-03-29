@@ -4,7 +4,51 @@ date: 2026-03-23
 description: "A guide for IT enthusiasts: From local installation on OpenBSD to automated deployment via GitHub Actions."
 tags: ["Hugo", "LoveIt", "GitHub Pages", "OpenBSD", "DevOps", "Tutorial"]
 categories: ["Tutorials"]
+images: [ "/images/hugo-github-setup.png" ]
 featuredImage: "/images/hugo-github-setup.png"
+featuredImagePreview: "/images/hugo-github-setup.png"
+
+hiddenFromHomePage: false
+hiddenFromSearch: false
+twemoji: false
+lightgallery: true
+ruby: true
+fraction: true
+fontawesome: true
+linkToMarkdown: true
+rssFullText: false
+
+toc:
+  enable: true
+  auto: true
+  keepStatic: false
+code:
+  copy: true
+  maxShownLines: 50
+math:
+  enable: false
+  # ...
+mapbox:
+  # ...
+share:
+  enable: true
+  # ...
+comment:
+  enable: true
+  # ...
+library:
+  css:
+    # someCSS = "some.css"
+    # located in "assets/"
+    # Or
+    # someCSS = "https://cdn.example.com/some.css"
+  js:
+    # someJS = "some.js"
+    # located in "assets/"
+    # Or
+    # someJS = "https://cdn.example.com/some.js"
+seo:
+  images: [ "/images/hugo-github-setup.png" ]
 ---
 
 Do you have a project idea and are looking for a simple way to present it on your own website? With **Hugo** and **GitHub Pages**, you can get it done in no time. Using this site as an example, I’ll show you how straightforward it is to build your own presence.
