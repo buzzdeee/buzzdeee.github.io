@@ -3,7 +3,7 @@ title: "Hugo Themes anpassen: Einen mehrsprachigen Custom-Footer hinzufügen"
 subtitle: "Wie du Theme-Layouts sicher überschreibst und bestehende Social-Media-Konfigurationen im LoveIt-Theme wiederverwendest."
 date: 2026-03-30T19:59:11+02:00
 lastmod: 2026-03-30T19:59:11+02:00
-draft: true
+draft: false
 author: "Sebastian"
 authorLink: "https://github.com/buzzdeee"
 description: "Eine Schritt-für-Schritt-Anleitung zum Überschreiben von Hugo-Layouts, um einen individuellen, mehrsprachigen Footer mit Support-Links zu erstellen."

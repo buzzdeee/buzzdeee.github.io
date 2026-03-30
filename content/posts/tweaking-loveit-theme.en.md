@@ -3,7 +3,7 @@ title: "Tweaking Hugo Themes: Adding a Multilingual Custom Footer"
 subtitle: "How to safely override theme layouts and reuse social configuration in the LoveIt theme."
 date: 2026-03-30T19:59:11+02:00
 lastmod: 2026-03-30T19:59:11+02:00
-draft: true
+draft: false
 author: ""
 authorLink: ""
 description: "A step-by-step guide on overriding Hugo theme layouts to add a custom, multilingual footer with social media support links."
