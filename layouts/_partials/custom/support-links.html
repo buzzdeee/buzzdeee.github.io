@@ -1,0 +1,19 @@
+<div class="support-links">
+    {{- $socialMap := resources.Get "data/social.yml" | transform.Unmarshal -}}
+    {{- $supportServices := slice "paypal" "patreon" "ko-fi" "githubsponsor" "liberapay" -}} {{/* Add yours here */}}
+    
+    {{- range $key, $value := .Site.Params.social -}}
+        {{- if in $supportServices ($key | lower) -}}
+            {{- $social := $key | lower | index $socialMap | default dict -}}
+            {{- if $value -}}
+                {{- /* This mimics the LoveIt logic to prepare the dict for the plugin */ -}}
+                {{- if reflect.IsMap $value -}}
+                    {{- $social = merge $social $value -}}
+                {{- else -}}
+                    {{- $social = dict "Id" $value | merge $social -}}
+                {{- end -}}
+                {{- partial "plugin/social.html" $social -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+</div>

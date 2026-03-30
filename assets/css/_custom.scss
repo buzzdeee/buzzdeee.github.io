@@ -1,0 +1,20 @@
+/* Custom Post Footer Styling */
+.custom-post-footer {
+    margin-top: 2rem;
+}
+
+.custom-post-footer h4 {
+    margin-bottom: 0.5rem; /* Reduced space below the headline */
+    color: var(--title-color); /* Ensures it matches theme headings */
+}
+
+.custom-post-footer p {
+    margin-top: 0; /* Removes the top gap of the paragraph */
+    margin-bottom: 1.2rem; /* Keeps a nice gap before the next section */
+}
+
+.support-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px; /* If you want spacing between social icons */
+}
