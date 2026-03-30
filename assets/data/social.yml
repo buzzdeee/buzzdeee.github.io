@@ -652,6 +652,14 @@ kofi:
   Icon:
     Class: fa-brands fa-ko-fi
 
+# 082: GitHub Sponsors
+githubsponsor:
+  Weight: 38
+  Title: GitHub Sponsor
+  Prefix: https://github.com/sponsors/
+  Icon:
+    Class: fab fa-github-alt
+
 # 083: Liberapay
 liberapay:
   Weight: 37
