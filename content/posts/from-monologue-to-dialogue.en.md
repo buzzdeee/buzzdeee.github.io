@@ -204,6 +204,3 @@ The combination of the **LoveIt theme** and **Giscus** gives you a powerful, lig
 
 While Giscus does require readers to have a GitHub account, for a tech-focused blog, this isn't just a minor hurdle, it's an effective filter that keeps the quality of discussion high and the spam levels low.
 
-**Now it's your turn!**
-Do you have questions about the setup, or do you know any other hidden gems for the LoveIt theme? Put the new system to the test, drop a reaction or leave a comment below!
-

@@ -482,7 +482,10 @@ jobs:
           extended: true # LoveIt theme requires extended version (SCSS)
 
       - name: Build with Hugo
-        run: hugo --minify
+        # to ensure, no draft articles are shown on the site
+        run: |
+          rm -rf public
+          hugo --minify --environment production --buildDrafts=false
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

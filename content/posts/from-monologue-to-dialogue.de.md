@@ -191,5 +191,3 @@ Die Kombination aus dem **LoveIt-Theme** und **Giscus** bietet dir ein leistungs
 
 Obwohl Giscus voraussetzt, dass Leser einen GitHub-Account besitzen, ist dies für einen technisch orientierten Blog kein echtes Hindernis – vielmehr ist es ein effektiver Filter, der die Qualität der Diskussionen hoch und das Spam-Aufkommen niedrig hält.
 
-**Jetzt bist du dran!**
-Hast du Fragen zur Einrichtung oder kennst du noch andere versteckte Schätze für das LoveIt-Theme? Teste das neue System direkt aus – hinterlasse eine Reaktion oder einen Kommentar unter diesem Beitrag!
