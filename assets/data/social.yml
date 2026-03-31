@@ -684,6 +684,14 @@ gravatar:
   Icon:
     Simpleicons: gravatar
 
+# 084: Puppetforge
+puppetforge:
+  Weight: 83
+  Title: Puppetforge
+  Prefix: https://forge.puppet.com/modules/
+  Icon:
+    Simpleicons: puppet
+
 # Phone
 phone:
   Weight: 98

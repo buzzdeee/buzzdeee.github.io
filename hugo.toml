@@ -290,8 +290,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     GitHubSponsor = "buzzdeee"
     Linkedin = "sebastian-r-97bb8857"
     X = ""
-    Instagram = ""
-    Facebook = ""
+    Instagram = "buzzdeee"
+    Facebook = "buzzdeee"
     Telegram = ""
     Medium = ""
     Gitlab = ""
@@ -364,7 +364,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     TryHackMe = "buzzdeee"
     Codeberg = ""
     HuggingFace = ""
-    Threads = ""
+    Threads = "buzzdeee"
     LeetCode = ""
     LeetCodeCN = ""
     Bluesky = "buzzdeee.bsky.social"
@@ -374,6 +374,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     Liberapay = "buzzdeee"
     Credly = "sebastian-reitenbach"
     Gravatar = "buzzdeee"
+    Puppetforge = "buzzdeee"
 
   # Page global config
   # 文章页面全局配置
