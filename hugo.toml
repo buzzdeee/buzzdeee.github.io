@@ -637,7 +637,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   [params.verification]
     google = "Z55NNZAesgKJIs06qIFZOQXIRJ-BpYQpssGZ67uL4ic"
     bing = "CD81960F0B6C42F79EEE02A23CFAD2CC"
-    yandex = ""
+    yandex = "399a82160e620b36"
     pinterest = ""
     baidu = ""
 
