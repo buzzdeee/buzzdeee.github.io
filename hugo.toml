@@ -638,7 +638,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     google = "Z55NNZAesgKJIs06qIFZOQXIRJ-BpYQpssGZ67uL4ic"
     bing = "CD81960F0B6C42F79EEE02A23CFAD2CC"
     yandex = "399a82160e620b36"
-    pinterest = ""
+    pinterest = "4ed1d79dd61c2a09664cb6257e910727"
     baidu = ""
 
   # Site SEO config
