@@ -696,6 +696,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # ["jsdelivr.yml"]
     # "assets/data/cdn/"
     #data = "jsdelivr.yml"
+    data = "my_local.yml"
 
   # Compatibility config
   [params.compatibility]
