@@ -18,8 +18,8 @@ comment: false
   <p><strong>Vertreten durch:</strong> Sebastian Reitenbach</p>
 
   <p><strong>Kontakt:</strong><br>
-    <strong>E-Mail:</strong> webmaster@reitenba.ch<br>
-    <strong>Telefon:</strong> 03381/268348
+    <strong>E-Mail:</strong> webmaster [at] reitenba.ch<br>
+    <strong>Telefon:</strong> +49 3381 268348
   </p>
 
   <p><strong>Regulierungs- und Aufsichtsbehörde (Landesmedienanstalt):</strong> falls Sie von Ihrem Social-Media Accounts auf das Impressum Ihrer Website verweisen.</p>

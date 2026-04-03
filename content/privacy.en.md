@@ -54,7 +54,7 @@ Stettiner Str. 41<br />
 35410 Hungen<br />
 Germany</p>
 <p>Phone: +49 3381 268348<br />
-E-Mail: webmaster@reitenba.ch</p>
+E-Mail: webmaster [at] reitenba.ch</p>
 <p>The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (e.g., names, e-mail addresses, etc.).</p>
 
 <h3>Storage Duration</h3> 

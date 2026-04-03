@@ -19,7 +19,7 @@ comment: false
   <p><strong>Represented by:</strong> Sebastian Reitenbach</p>
 
   <p><strong>Contact:</strong><br>
-    <strong>E-Mail:</strong> webmaster@reitenba.ch<br>
+    <strong>E-Mail:</strong> webmaster [at] reitenba.ch<br>
     <strong>Phone:</strong> +49 3381 268348
   </p>
 
