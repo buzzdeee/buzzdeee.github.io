@@ -87,6 +87,19 @@
             </div>
         {{- end -}}
 
+{{- /* Affiliate Disclosure */ -}}
+{{- if ne .Params.affiliate false -}}
+    <div class="post-affiliate-custom">
+        {{- $footerPath := printf "custom/affiliate-%s.html" .Lang -}}
+        {{- if templates.Exists (printf "_partials/%s" $footerPath) -}}
+            {{- partial $footerPath . -}}
+        {{- else -}}
+            {{- /* Fallback auf Deutsch, falls die Sprachdatei fehlt */ -}}
+            {{- partial "custom/affiliate-de.html" . -}}
+        {{- end -}}
+    </div>
+{{- end -}}
+
         {{- /* Content */ -}}
         <div class="content" id="content">
             {{- dict "Content" .Content "Ruby" $params.ruby "Fraction" $params.fraction "Fontawesome" $params.fontawesome | partial "function/content.html" | safeHTML -}}
