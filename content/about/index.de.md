@@ -3,6 +3,7 @@ title: "Über mich"
 layout: "single"
 nodateline: true
 noauthor: true
+show_social_footer: true
 ---
 
 ## Hallo, ich bin Sebastian! 👋

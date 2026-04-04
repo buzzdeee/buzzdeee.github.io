@@ -1,0 +1,15 @@
+<hr>
+<div class="social-sharing-section">
+    <h4>{{ T "stayUpdated" | default "📱 Bleib auf dem Laufenden" }}</h4>
+    <p>{{ T "followMe" | default "Folge mir auf einer der folgenden Plattformen, um keine neuen Blog-Posts zu verpassen:" }}</p>
+    <div class="follow-wrapper">
+        {{- partial "custom/follow-links.html" . -}}
+    </div>
+
+    <h4>{{ T "supportWork" | default "❤️ Unterstütze meine Arbeit" }}</h4>
+    <p>{{ T "supportDesc" | default "Wenn dir der Artikel gefallen hat oder du meine Arbeit generell nützlich findest, freue ich mich über eine kleine Unterstützung:" }}</p>
+    <div class="support-wrapper">
+        {{- partial "custom/support-links.html" . -}}
+    </div>
+</div>
+<hr>
