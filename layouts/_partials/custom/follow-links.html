@@ -1,0 +1,19 @@
+<div class="follow-links">
+    {{- $socialMap := resources.Get "data/social.yml" | transform.Unmarshal -}}
+    {{- $followServices := slice "linkedin" "facebook" "instagram" "bluesky" -}}
+    
+    {{- range $key, $value := .Site.Params.social -}}
+        {{- if in $followServices ($key | lower) -}}
+            {{- $follow:= $key | lower | index $socialMap | default dict -}}
+            {{- if $value -}}
+                {{- /* This mimics the LoveIt logic to prepare the dict for the plugin */ -}}
+                {{- if reflect.IsMap $value -}}
+                    {{- $follow = merge $follow $value -}}
+                {{- else -}}
+                    {{- $follow = dict "Id" $value | merge $follow -}}
+                {{- end -}}
+                {{- partial "plugin/social.html" $follow -}}
+            {{- end -}}
+        {{- end -}}
+    {{- end -}}
+</div>
