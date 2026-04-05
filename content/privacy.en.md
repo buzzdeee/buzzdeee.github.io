@@ -48,12 +48,15 @@ USA</p>
 
 <h3>Note on the Responsible Party</h3> 
 <p>The responsible party for data processing on this website is:</p> 
-<p>buzzdeee<br />
-c/o Impressumservice Dein-Impressum<br />
-Stettiner Str. 41<br />
-35410 Hungen<br />
+buzzdeee - Sebastian Reitenbach
+c/o Online-Impressum #7364
+Europaring 90
+53757 Sankt Augustin
+<p>buzzdeee - Sebastian Reitenbach<br />
+c/o Online-Impressum #7364<br />
+Europaring 90<br />
+53757 Sankt Augustin<br />
 Germany</p>
-<p>Phone: +49 3381 268348<br />
 E-Mail: webmaster [at] reitenba.ch</p>
 <p>The responsible party is the natural or legal person who alone or jointly with others decides on the purposes and means of processing personal data (e.g., names, e-mail addresses, etc.).</p>
 

@@ -66,11 +66,11 @@ geschieht.</p> <p>Wir weisen darauf hin, dass die Daten&uuml;bertragung im Inter
 Kommunikation per E-Mail) Sicherheitsl&uuml;cken aufweisen kann. Ein l&uuml;ckenloser Schutz der Daten vor
 dem Zugriff durch Dritte ist nicht m&ouml;glich.</p>
 <h3>Hinweis zur verantwortlichen Stelle</h3> <p>Die verantwortliche Stelle f&uuml;r die Datenverarbeitung auf
-dieser Website ist:</p> <p>buzzdeee<br />
-c/o Impressumservice Dein-Impressum<br />
-Stettiner Str. 41<br />
-35410 Hungen</p>
-<p>Telefon: +49 3381 268348<br />
+dieser Website ist:
+</p> <p>buzzdeee - Sebastian Reitenbach<br />
+c/o Online-Impressum #7364<br />
+Europaring 90<br />
+53757 Sankt Augustin</p>
 E-Mail: webmaster [at] reitenba.ch</p>
  <p>Verantwortliche Stelle ist die nat&uuml;rliche oder juristische Person, die allein oder gemeinsam mit anderen
 &uuml;ber die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.&nbsp;B. Namen, E-Mail-
