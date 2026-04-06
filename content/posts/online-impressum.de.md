@@ -5,12 +5,14 @@ date: 2026-04-04T10:00:00+02:00
 lastmod: 2026-04-04T10:00:00+02:00
 draft: false
 author: ""
+license: "MIT"
 description: "Ein Leitfaden zu meinem neuen Legal-Setup für Hugo: Die Kombination aus Managed-Impressum-Hosting und einer minimalistischen, cookie-freien Datenschutzerklärung."
+images: ["/images/legal-shield-v2.png" ]
 tags: [ "Hugo", "Impressum", "Datenschutz", "DSGVO", "Blogging" ]
 categories: [ "Web Development" ]
 featuredImage: "/images/legal-shield-v2.png"
 seo:
-  images: []
+  images: ["/images/legal-shield-v2.png" ]
   # ...
 ---
 

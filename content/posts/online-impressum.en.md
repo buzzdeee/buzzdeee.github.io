@@ -5,7 +5,9 @@ date: 2026-04-04T10:00:00+02:00
 lastmod: 2026-04-04T10:00:00+02:00
 draft: false
 author: ""
+license: "MIT"
 description: "A guide to my new legal setup for Hugo: Combining managed imprint hosting with a minimalist, cookie-free privacy policy – clean, secure, and maintenance-free."
+images: ["/images/legal-shield-v2.png"]
 tags: [ "Hugo", "Imprint", "Privacy", "GDPR", "Blogging" ]
 categories: [ "Web Development" ]
 featuredImage: "/images/legal-shield-v2.png"
