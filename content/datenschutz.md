@@ -8,7 +8,7 @@ comment: false
 Diese Datenschutzerklärung informiert über die Art, den Umfang und Zweck der Verarbeitung personenbezogener Daten auf dieser Website.
 
 **Verantwortlicher:**
-
+```
 buzzdeee - Sebastian Reitenbach
 c/o Online-Impressum #7364
 Europaring 90
@@ -16,6 +16,7 @@ Europaring 90
  
 E-Mail: buzzdeee@mail.online-impressum.de
 Telefon: +49 3381 268348
+```
 
 ---
 

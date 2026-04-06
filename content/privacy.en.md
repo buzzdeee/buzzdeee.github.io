@@ -9,6 +9,7 @@ This privacy policy informs you about the type, scope, and purpose of the proces
 
 **Controller:**
 
+```
 buzzdeee - Sebastian Reitenbach
 c/o Online-Impressum #7364
 Europaring 90
@@ -16,6 +17,7 @@ Europaring 90
  
 E-Mail: buzzdeee@mail.online-impressum.de
 Phone: +49 3381 268348
+```
 
 ---
 
