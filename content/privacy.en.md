@@ -4,8 +4,6 @@ layout: "single"
 comment: false
 ---
 
-# Privacy Policy (English)
-
 ## 1. General Information
 This privacy policy informs you about the type, scope, and purpose of the processing of personal data on this website.
 
