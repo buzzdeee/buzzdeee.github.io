@@ -64,6 +64,10 @@ Starting a blog is exciting, but if you are hosting from Germany or targeting Eu
 
 Here is how I navigated the legal requirements, secured a privacy-friendly address, and implemented a multilingual setup in Hugo.
 
+{{< admonition type=important title="Update: Newer Service Recommendation" open=true >}}
+**Note:** Since writing this post, I have found a more efficient legal notice (Impressum) service. While the Hugo technical steps below are still valid, I recommend checking out my updated guide for the latest recommendation: **[Managed Imprint & MIT-Style Privacy: My Legal Setup for Hugo](/en/online-impressum/)**.
+{{< /admonition >}}
+
 ## Why Do You Need This?
 
 In Germany, § 5 DDG (formerly TMG) requires almost every website to have an "Impressum" (Legal Notice). It’s not just for businesses; even a hobby blog can be considered "business-like" if you have affiliate links or just a general "permanence."

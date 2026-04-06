@@ -43,6 +43,10 @@ Einen Blog zu starten ist aufregend, aber wenn du von Deutschland aus hostest od
 
 Hier zeige ich, wie ich die rechtlichen Anforderungen gemeistert, eine privatsphärenfreundliche Adresse gesichert und ein mehrsprachiges Setup in Hugo implementiert habe.
 
+{{< admonition type=important title="Update: Neuerer Ansatz verfügbar" open=true >}}
+**Hinweis:** Seit der Veröffentlichung dieses Artikels habe ich einen noch besseren Impressum-Service gefunden, der die Einrichtung vereinfacht. Während die technischen Hugo-Tipps unten weiterhin hilfreich sind, empfehle ich für die rechtliche Komponente meinen aktuelleren Guide: **[Managed Impressum & Datenschutz im MIT-Stil: Mein Legal-Setup für Hugo](/online-impressum/)**.
+{{< /admonition >}}
+
 ## Warum braucht man das überhaupt?
 
 In Deutschland verpflichtet § 5 DDG (ehemals TMG) fast jeden Website-Betreiber zu einem „Impressum“. Das gilt nicht nur für Unternehmen; selbst ein Hobby-Blog kann als „geschäftsmäßig“ eingestuft werden, wenn er Affiliate-Links enthält oder einfach eine gewisse Beständigkeit aufweist.
