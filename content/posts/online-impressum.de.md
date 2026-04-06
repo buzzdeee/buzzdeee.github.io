@@ -11,6 +11,7 @@ images: ["/images/legal-shield-v2.png" ]
 tags: [ "Hugo", "Impressum", "Datenschutz", "DSGVO", "Blogging" ]
 categories: [ "Web Development" ]
 featuredImage: "/images/legal-shield-v2.png"
+featuredImagePreview: "/images/legal-shield-v2.png"
 seo:
   images: ["/images/legal-shield-v2.png" ]
   # ...
