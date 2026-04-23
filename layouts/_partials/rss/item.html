@@ -41,8 +41,8 @@
         <category>{{ . }}</category>
     {{- end }}
     <hashtags>
-        {{- if .Params.tags -}}
-            #{{ delimit .Params.tags " #" }}
+        {{- if .Page.Params.tags -}}
+            #{{ delimit .Page.Params.tags " #" }}
         {{- end -}}
     </hashtags>
     <shortdesc>
