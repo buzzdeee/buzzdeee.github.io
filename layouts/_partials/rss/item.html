@@ -40,6 +40,11 @@
     {{ range .Page.Params.tags -}}
         <category>{{ . }}</category>
     {{- end }}
+    <hashtags>
+        {{- if .Params.tags -}}
+            #{{ delimit .Params.tags " #" }}
+        {{- end -}}
+    </hashtags>
     <shortdesc>
         {{ .Page.Params.description }}
     </shortdesc>
