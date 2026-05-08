@@ -10,7 +10,7 @@ description: "Fixing Kismet mutex bugs, patching whsniff, and finally capturing 
 license: "MIT"
 images: [ "/images/sniffing_802154_openbsd.png", "/images/ticc2531.jpg", "/images/kismet_zigbee.png", "/images/wireshark_802154.png" ]
 
-tags: ["Zigbee", "Sniffing", "Kismet", "Wireshark", "CC2531", "802.15.4"]
+tags: [ "OpenBSD", "Zigbee", "Sniffing", "Kismet", "Wireshark", "CC2531", "802.15.4"]
 categories: [ "Tech" ]
 
 featuredImage: "/images/sniffing_802154_openbsd.png"
