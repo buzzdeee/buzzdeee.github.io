@@ -3,7 +3,7 @@ title: "Zwei Wochen OpenBSD Ports maintenance: LLVM 22 Fallout, SDR Stack Expans
 subtitle: ""
 date: 2026-06-04T22:32:06+02:00
 lastmod: 2026-06-04T22:32:06+02:00
-draft: true
+draft: false
 description: "A retrospective on recent OpenBSD ports maintenance: resolving LLVM 22 fallout across GNUstep, expanding Software Defined Radio (SDR) tools, introducing GNUstep App Wrappers, and streamlining Ruby web scanners."
 license: "MIT"
 images: ["/images/openbsd-ports-updating-spree-june4.png"]
