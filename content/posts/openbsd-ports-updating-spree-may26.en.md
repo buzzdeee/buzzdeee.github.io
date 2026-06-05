@@ -9,7 +9,7 @@ license: "MIT"
 images: [ "/images/ports-updating-sprint.png" ]
 
 tags: ["OpenBSD", "Ports", "Security", "Ruby", "Puppet", "Rocrail"]
-categories: ["Tech"]
+categories: ["Tech", "Porting"]
 
 featuredImage: "/images/ports-updating-sprint.png"
 featuredImagePreview: "/images/ports-updating-sprint.png"
