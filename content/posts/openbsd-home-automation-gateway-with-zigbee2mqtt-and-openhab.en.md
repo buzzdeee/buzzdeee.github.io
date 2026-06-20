@@ -10,7 +10,7 @@ license: "MIT"
 images: [ "/images/openbsd-home-automation-gateway-with-zigbee2mqtt-and-openhab.png", "edited-image.jpg", "/images/zigbee2mqtt_network.png", "/images/zigbee2mqtt_dashboard.png", "/images/openHAB_addons.png", "/images/openHAB_zigbee_things.png", "/images/openHAB_zigbee_presence_sensor_channels.png", "/images/openHAB-items.png", "/images/openHAB-pages.png", "/images/openHAB-mobile.png" ]
 
 tags: ["OpenBSD", "Zigbee", "Home Automation", "openHAB", "Nginx", "MQTT"]
-categories: [ "Tech" ]
+categories: [ "Smart Home" ]
 
 featuredImage: "/images/openbsd-home-automation-gateway-with-zigbee2mqtt-and-openhab.png"
 featuredImagePreview: "/images/openbsd-home-automation-gateway-with-zigbee2mqtt-and-openhab.png"
