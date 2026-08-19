@@ -67,7 +67,7 @@ Recently, I picked up a batch of surplus thin clients that turned out to be the 
 
 ## The Hardware Stack
 
-The foundation of this build is the [Fujitsu Futro S9010n](https://www.ebay.de/sch/i.html?_nkw=Fujitsu+Futro+S9010n&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=FutroS9010n&toolid=10001&mkevt=1). These little machines are absolute gems for home servers. For under the price of a modern Raspberry Pi kit, you get a fully enclosed x86 machine equipped with:
+The foundation of this build is the [Fujitsu Futro S9010n](https://www.ebay.de/sch/i.html?_nkw=Fujitsu+Futro+S9010n&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=FutroS9010n&toolid=10001&mkevt=1#affiliate). These little machines are absolute gems for home servers. For under the price of a modern Raspberry Pi kit, you get a fully enclosed x86 machine equipped with:
 
 * **20 GB RAM** (Originally came with 8GB, but was able to make it work with 20GB, 32GB made it slow like hell)
 * **64 GB SSD**
@@ -78,12 +78,12 @@ The foundation of this build is the [Fujitsu Futro S9010n](https://www.ebay.de/s
 There is one specific caveat if you run OpenBSD on the Futro S9010n: the display goes completely blank if `inteldrm` is enabled. Since this is run completely headless as a server, it doesn't bother me, but keep it in mind during initial installation!
 {{< /admonition >}}
 
-To keep things secure, I locked this server into a dedicated IoT VLAN. Network communication out to the physical Zigbee mesh is handled over the network via a [SONOFF Zigbee 3.0 USB Dongle Plus (Dongle-M)](https://www.ebay.de/itm/388971238285?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=DongleM&toolid=10001&mkevt=1), isolating untrusted endpoints entirely from my primary network lanes.
+To keep things secure, I locked this server into a dedicated IoT VLAN. Network communication out to the physical Zigbee mesh is handled over the network via a [SONOFF Zigbee 3.0 USB Dongle Plus (Dongle-M)](https://www.ebay.de/itm/388971238285?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=DongleM&toolid=10001&mkevt=1#affiliate), isolating untrusted endpoints entirely from my primary network lanes.
 
 With the backbone ready, I loaded up an array of smart devices to manage:
-* **Power:** A [4-Pack of SONOFF Zigbee Smart Plugs](https://www.ebay.de/itm/385779868557?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=SonoffSteckdose&toolid=10001&mkevt=1) (great for mapping routers across the mesh).
-* **Climate:** A [SONOFF Smart Zigbee 3.0 Thermostat](https://www.ebay.de/itm/388766053368?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Thermostat&toolid=10001&mkevt=1) as well as [SONOFF SNZB-02P Temperature & Humidity Sensors](https://www.ebay.de/itm/384895576208?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=TempFeuchtSensor&toolid=10001&mkevt=1).
-* **Presence & Lighting:** The microwave-radar-based [SONOFF SNZB-06P Presence Sensor](https://www.ebay.de/itm/386285050110?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=PresenceSensor&toolid=10001&mkevt=1) driving standard [GU10 Smart Zigbee LED Bulbs](https://www.ebay.de/sch/i.html?_nkw=Smart+WiFi+Zigbee+LED+Glühbirne+GU10&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Gluehbirne&toolid=10001&mkevt=1) and a matching [Zigbee Deckenlampe](https://www.ebay.de/itm/326908849090?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Deckenlampe&toolid=10001&mkevt=1).
+* **Power:** A [4-Pack of SONOFF Zigbee Smart Plugs](https://www.ebay.de/itm/385779868557?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=SonoffSteckdose&toolid=10001&mkevt=1#affiliate) (great for mapping routers across the mesh).
+* **Climate:** A [SONOFF Smart Zigbee 3.0 Thermostat](https://www.ebay.de/itm/388766053368?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Thermostat&toolid=10001&mkevt=1#affiliate) as well as [SONOFF SNZB-02P Temperature & Humidity Sensors](https://www.ebay.de/itm/384895576208?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=TempFeuchtSensor&toolid=10001&mkevt=1#affiliate).
+* **Presence & Lighting:** The microwave-radar-based [SONOFF SNZB-06P Presence Sensor](https://www.ebay.de/itm/386285050110?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=PresenceSensor&toolid=10001&mkevt=1#affiliate) driving standard [GU10 Smart Zigbee LED Bulbs](https://www.ebay.de/sch/i.html?_nkw=Smart+WiFi+Zigbee+LED+Glühbirne+GU10&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Gluehbirne&toolid=10001&mkevt=1#affiliate) and a matching [Zigbee Deckenlampe](https://www.ebay.de/itm/326908849090?mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Deckenlampe&toolid=10001&mkevt=1#affiliate).
 
 ---
 

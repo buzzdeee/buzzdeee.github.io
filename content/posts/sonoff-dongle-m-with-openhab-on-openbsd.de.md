@@ -59,12 +59,12 @@ mages/wireshark_zigbee_decrypted.png" ]
 
 ---
 
-In meinem [letzten Post](/zigbee-sniffing-on-openbsd/) haben wir uns das Sniffing von Zigbee-Traffic mit dem älteren [TI CC2531](https://www.ebay.de/itm/404481824304?var=674447321503&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=TICC2531&toolid=10001&mkevt=1) angesehen. Während dieser Stick zum Lernen super ist, ist es jedoch nicht die Hardware, die man für die eigentliche Haussteuerung nutzen möchte. Mein CC2531 eignet sich hervorragend zum Sniffen, da er schon mit der Sniffer-Firmware daherkam – dafür habe ich ihn benutzt und werde ihn auch weiterhin so verwenden.
+In meinem [letzten Post](/zigbee-sniffing-on-openbsd/) haben wir uns das Sniffing von Zigbee-Traffic mit dem älteren [TI CC2531](https://www.ebay.de/itm/404481824304?var=674447321503&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=TICC2531&toolid=10001&mkevt=1#affiliate) angesehen. Während dieser Stick zum Lernen super ist, ist es jedoch nicht die Hardware, die man für die eigentliche Haussteuerung nutzen möchte. Mein CC2531 eignet sich hervorragend zum Sniffen, da er schon mit der Sniffer-Firmware daherkam – dafür habe ich ihn benutzt und werde ihn auch weiterhin so verwenden.
 
-Meiner Neugier folgend, habe ich mir einen **[Sonoff Dongle Max](https://sonoff.tech/en-de/products/sonoff-dongle-max-zigbee-thread-poe-dongle-dongle-m)** auf [eBay](https://www.ebay.de/itm/388971238285?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xBWFdbfFYp4er2kjyno9qmO593oK669JSSjjTgWvi6tTRNzvYtGUbb3EfOMwwSyITjSDhxkDoFtcCFaXt%2BLbbqQavhhYkKezX99g2LMSYO2N5S0ljwoKg1gnLanibPKbepX68fje0f75JFx9r0FqrNHOksW%2BWM%2BVAIttAcpDD38IEYQS3XIc7r0yK3BY7TAV6w%3D&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Sonoff&toolid=10001&mkevt=1) gekauft, um ihn als vollwertigen **Zigbee-Coordinator** einzusetzen. Im letzten Post konnte ich nur ein paar Zigbee- und andere 802.15.4-Geräte von Nachbarn sehen, aber wo bleibt da der Spaß? Das hat mich neugierig gemacht und mich dazu gebracht, meine eigene Hausautomatisierung zu starten!
+Meiner Neugier folgend, habe ich mir einen **[Sonoff Dongle Max](https://sonoff.tech/en-de/products/sonoff-dongle-max-zigbee-thread-poe-dongle-dongle-m)** auf [eBay](https://www.ebay.de/itm/388971238285?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xBWFdbfFYp4er2kjyno9qmO593oK669JSSjjTgWvi6tTRNzvYtGUbb3EfOMwwSyITjSDhxkDoFtcCFaXt%2BLbbqQavhhYkKezX99g2LMSYO2N5S0ljwoKg1gnLanibPKbepX68fje0f75JFx9r0FqrNHOksW%2BWM%2BVAIttAcpDD38IEYQS3XIc7r0yK3BY7TAV6w%3D&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Sonoff&toolid=10001&mkevt=1#affiliate) gekauft, um ihn als vollwertigen **Zigbee-Coordinator** einzusetzen. Im letzten Post konnte ich nur ein paar Zigbee- und andere 802.15.4-Geräte von Nachbarn sehen, aber wo bleibt da der Spaß? Das hat mich neugierig gemacht und mich dazu gebracht, meine eigene Hausautomatisierung zu starten!
 
 {{< admonition type="tip" title="eBay Tipp" >}}
-Auf [eBay](https://www.ebay.de/itm/388971238285?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xBWFdbfFYp4er2kjyno9qmO593oK669JSSjjTgWvi6tTRNzvYtGUbb3EfOMwwSyITjSDhxkDoFtcCFaXt%2BLbbqQavhhYkKezX99g2LMSYO2N5S0ljwoKg1gnLanibPKbepX68fje0f75JFx9r0FqrNHOksW%2BWM%2BVAIttAcpDD38IEYQS3XIc7r0yK3BY7TAV6w%3D&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Sonoff&toolid=10001&mkevt=1) findet man den Sonoff Dongle Max zum gleichen Preis wie im offiziellen Shop, kann aber die Funktion "Preisvorschlag senden" nutzen, um das Gerät ein paar Euro günstiger zu bekommen. Bei mir hat es geklappt ;)
+Auf [eBay](https://www.ebay.de/itm/388971238285?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xBWFdbfFYp4er2kjyno9qmO593oK669JSSjjTgWvi6tTRNzvYtGUbb3EfOMwwSyITjSDhxkDoFtcCFaXt%2BLbbqQavhhYkKezX99g2LMSYO2N5S0ljwoKg1gnLanibPKbepX68fje0f75JFx9r0FqrNHOksW%2BWM%2BVAIttAcpDD38IEYQS3XIc7r0yK3BY7TAV6w%3D&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Sonoff&toolid=10001&mkevt=1#affiliate) findet man den Sonoff Dongle Max zum gleichen Preis wie im offiziellen Shop, kann aber die Funktion "Preisvorschlag senden" nutzen, um das Gerät ein paar Euro günstiger zu bekommen. Bei mir hat es geklappt ;)
 {{< /admonition >}}
 
 ## Hardware: Der Sonoff Dongle Max
@@ -91,7 +91,7 @@ ucom0 at uslcom0 portno 0: usb1.1.00002.0
 {{< /highlight >}}
 
 {{< admonition type="tip" title="Warum PoE?" >}}
-Während USB zum Testen ausreicht, zwingt es den Coordinator dazu, direkt neben dem Server zu leben (wahrscheinlich im Keller oder im Rack). Mit **Zigbee over Ethernet** könnt ihr den Dongle zentral im Haus platzieren, indem ihr ein einziges PoE-Kabel für Strom und Daten nutzt. Falls ihr, anders als ich, keinen Switch mit nativem PoE habt, bekommt ihr auch günstige [PoE-Injektoren](https://www.ebay.de/sch/i.html?_nkw=PoE+Injector&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=PoeInjector&toolid=10001&mkevt=1) bei eBay.
+Während USB zum Testen ausreicht, zwingt es den Coordinator dazu, direkt neben dem Server zu leben (wahrscheinlich im Keller oder im Rack). Mit **Zigbee over Ethernet** könnt ihr den Dongle zentral im Haus platzieren, indem ihr ein einziges PoE-Kabel für Strom und Daten nutzt. Falls ihr, anders als ich, keinen Switch mit nativem PoE habt, bekommt ihr auch günstige [PoE-Injektoren](https://www.ebay.de/sch/i.html?_nkw=PoE+Injector&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=PoeInjector&toolid=10001&mkevt=1#affiliate) bei eBay.
 {{< /admonition >}}
 
 ### Die "Smart IP" Kopfschmerzen
@@ -305,7 +305,7 @@ printf '%02x' 104 73 101 15 20 56 102 28 132 77 211 116 109 134 9 20 && echo
 # Output: 6849650f1438661c844dd3746d860914
 {{< /highlight >}}
 
-Mit meinem [TI CC 2531](https://www.ebay.de/itm/404481824304) kann ich nun `whsniff` nutzen (welches es erst heute in den OpenBSD-Ports-Tree geschafft hat), um IEEE802.15.4-Traffic in Wireshark einzuspeisen:
+Mit meinem [TI CC 2531](https://www.ebay.de/itm/404481824304?var=674447321503&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=TICC2531&toolid=10001&mkevt=1#affiliate) kann ich nun `whsniff` nutzen (welches es erst heute in den OpenBSD-Ports-Tree geschafft hat), um IEEE802.15.4-Traffic in Wireshark einzuspeisen:
 
 {{< highlight bash >}}
 sudo pkg_add -i whsniff wireshark

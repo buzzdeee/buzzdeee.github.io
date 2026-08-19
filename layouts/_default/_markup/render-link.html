@@ -1,0 +1,9 @@
+{{- $url := .Destination -}}
+{{- if strings.HasSuffix $url "#affiliate" -}}
+  {{- $cleanUrl := strings.TrimSuffix "#affiliate" $url -}}
+  {{- $defaultLabel := T "affiliatePopover" -}}
+  {{- $label := .Title | default $defaultLabel -}}
+  <span class="affiliate-wrapper"><a href="{{ $cleanUrl | safeURL }}" target="_blank" rel="noopener sponsored" class="affiliate-link">{{ .Text | safeHTML }} <span class="affiliate-icon">🛒</span></a><span class="affiliate-popover" role="tooltip">{{ $label }}</span></span>
+{{- else -}}
+  <a href="{{ $url | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if strings.HasPrefix $url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- end -}}

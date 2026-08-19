@@ -125,7 +125,7 @@ Wenn du ein SDR-Setup unter OpenBSD betreibst, mit HackRF oder RTL-SDR: Schau au
 Passend zum Thema SDR sei auch auf meinen früheren Artikel verwiesen: [Spaß mit RTL-SDR auf OpenBSD: Von Flugzeugen, Funk-Thermometern und Radio](/fun-with-rtl-sdr/)
 
 {{< admonition type=note title="Hinweis zu Hardware-Alternativen" open=true >}}
-Für wen die HackRF-Geräte zu teuer sind: Die bekannten **RTL-SDR Blog V3/V4** Dongles gibt es auch auf eBay zu einem guten Preis. Passende Antennen findest du dort ebenfalls... Nutze dafür einfach diesen [Partner-Link zu eBay](https://www.ebay.de/sch/i.html?_nkw=RTL-SDR+Blog&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=RTLSDR&toolid=10001&mkevt=1).
+Für wen die HackRF-Geräte zu teuer sind: Die bekannten **RTL-SDR Blog V3/V4** Dongles gibt es auch auf eBay zu einem guten Preis. Passende Antennen findest du dort ebenfalls... Nutze dafür einfach diesen [Partner-Link zu eBay](https://www.ebay.de/sch/i.html?_nkw=RTL-SDR+Blog&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=RTLSDR&toolid=10001&mkevt=1#affiliate).
 {{< /admonition >}}
 
 ---

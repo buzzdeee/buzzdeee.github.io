@@ -93,7 +93,7 @@ Their killer feature is the **Mesh Topology**, which allows every powered device
 
 ### 1. Adafruit Bluefruit Sniffer (nRF51822)
 
-This device is based on the older Nordic **nRF51822** chipset. You can find these for about 30-40 Euro on **[eBay](https://www.ebay.de/sch/i.html?_nkw=Adafruit+Bluefruit+nRF51822&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF51822&toolid=10001&mkevt=1)**. It is a fantastic, compact entry-level tool. While it can still "see" most modern devices - since even Bluetooth 5 devices
+This device is based on the older Nordic **nRF51822** chipset. You can find these for about 30-40 Euro on **[eBay](https://www.ebay.de/sch/i.html?_nkw=Adafruit+Bluefruit+nRF51822&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF51822&toolid=10001&mkevt=1#affiliate)**. It is a fantastic, compact entry-level tool. While it can still "see" most modern devices - since even Bluetooth 5 devices
 usually broadcast their initial presence using legacy v4-compatible packets - it has a hard ceiling. It cannot follow connections that switch to the faster 2 Mbps mode, and it is blind to the modern "Extended Advertising" or "Long Range" packets introduced in v5.
 
 **The "Friend" vs. "Sniffer" Identity Crisis:**
@@ -121,7 +121,7 @@ umodem0: status change notification available
 ucom0 at umodem0: usb1.1.00001.1
 {{< /highlight >}}
 
-These nice!nano boards can also be found on [eBay](https://www.ebay.de/sch/i.html?_nkw=Adafruit+Bluefruit+nRF51822&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF51822&toolid=10001&mkevt=1) for just about 4 Euro. At this price point, it’s worth picking up a small handful of them. Having a few extra boards lets you dedicate one to each protocol—BTLE, or 802.15.4 saving you the hassle of constant re-flashing when you want to switch between different sniffing tasks.
+These nice!nano boards can also be found on [eBay](https://www.ebay.de/sch/i.html?_nkw=Adafruit+Bluefruit+nRF51822&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF51822&toolid=10001&mkevt=1#affiliate) for just about 4 Euro. At this price point, it’s worth picking up a small handful of them. Having a few extra boards lets you dedicate one to each protocol—BTLE, or 802.15.4 saving you the hassle of constant re-flashing when you want to switch between different sniffing tasks.
 
 You can find its documentation [here](https://docs.nordicsemi.com/bundle/ncs-latest/page/zephyr/boards/others/promicro_nrf52840/doc/index.html) and its [pinout/schematics here](https://nicekeyboards.com/docs/nice-nano/pinout-schematic).
 
@@ -384,9 +384,9 @@ If you've installed the plugins correctly, you will see "nRF Sniffer for Bluetoo
 
 ## Summary
 
-By combining the security-focused environment of **OpenBSD** with the versatility of the **[nRF52840](https://www.ebay.de/sch/i.html?_nkw=nRF52840+Nice!Nano&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF52840&toolid=10001&mkevt=1)** (and its predecessor, the **[nRF51822 Bluefruit Sniffer](https://www.ebay.de/sch/i.html?_nkw=Adafruit+Bluefruit+nRF51822&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF51822&toolid=10001&mkevt=1)**), you have a high-end protocol analyzer at your fingertips. From tracking Bluetooth advertisements to mapping out Zigbee mesh networks, the 2.4 GHz spectrum is no longer a black box.
+By combining the security-focused environment of **OpenBSD** with the versatility of the **[nRF52840](https://www.ebay.de/sch/i.html?_nkw=nRF52840+Nice!Nano&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF52840&toolid=10001&mkevt=1#affiliate)** (and its predecessor, the **[nRF51822 Bluefruit Sniffer](https://www.ebay.de/sch/i.html?_nkw=Adafruit+Bluefruit+nRF51822&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF51822&toolid=10001&mkevt=1#affiliate)**), you have a high-end protocol analyzer at your fingertips. From tracking Bluetooth advertisements to mapping out Zigbee mesh networks, the 2.4 GHz spectrum is no longer a black box.
 
-While the [nRF51822](https://www.ebay.de/sch/i.html?_nkw=Adafruit+Bluefruit+nRF51822&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF51822&toolid=10001&mkevt=1) remains a classic for BLE-specific tasks, the [nRF52840](https://www.ebay.de/sch/i.html?_nkw=nRF52840+Nice!Nano&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF52840&toolid=10001&mkevt=1)'s multi-protocol support opens the door to modern IoT exploration that was previously difficult to access on a budget.
+While the [nRF51822](https://www.ebay.de/sch/i.html?_nkw=Adafruit+Bluefruit+nRF51822&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF51822&toolid=10001&mkevt=1#affiliate) remains a classic for BLE-specific tasks, the [nRF52840](https://www.ebay.de/sch/i.html?_nkw=nRF52840+Nice!Nano&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=nRF52840&toolid=10001&mkevt=1#affiliate)'s multi-protocol support opens the door to modern IoT exploration that was previously difficult to access on a budget.
 
 ### Next Steps
 The setup is ready, but the airwaves are quiet... for now. This sounds like a good excuse to dive into **Home Automation** soon, which will likely involve introducing several Zigbee and Thread-based devices to my lab. Once those are in place, I’ll follow up with a detailed article showing these devices being mapped and analyzed in real-time. Stay tuned!

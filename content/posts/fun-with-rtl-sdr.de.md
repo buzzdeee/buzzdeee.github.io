@@ -68,7 +68,7 @@ Nach meinem letzten Post über [Modernes Kismet auf OpenBSD](/modern-kismet-on-o
 
 Der **[RTL-SDR](https://www.rtl-sdr.com/)** ist dabei quasi die Einstiegsdroge. Eigentlich waren das mal billige USB-Sticks für digitales Fernsehen (DVB-T), aber findige Hacker haben gemerkt, dass man den Realtek RTL2832U-Chip in einen Rohdaten-Modus versetzen kann. Damit kann man so ziemlich alles zwischen **500 kHz und 1,7 GHz** empfangen.
 
-Die Klassiker wie den RTL-SDR Blog V3 (oder den neuen V4) sowie passende Antennen bekommt man problemlos auf [eBay](https://www.ebay.de/sch/i.html?_nkw=RTL+SDR+BLOG&_sacat=0&_from=R40&_trksid=p2334524.m570.l1313&LH_TitleDesc=0&_odkw=RTL+SDR&_osacat=0&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=RTLSDR&toolid=10001&mkevt=1).
+Die Klassiker wie den RTL-SDR Blog V3 (oder den neuen V4) sowie passende Antennen bekommt man problemlos auf [eBay](https://www.ebay.de/sch/i.html?_nkw=RTL+SDR+BLOG&_sacat=0&_from=R40&_trksid=p2334524.m570.l1313&LH_TitleDesc=0&_odkw=RTL+SDR&_osacat=0&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=RTLSDR&toolid=10001&mkevt=1#affiliate).
 
 Für diesen Artikel habe ich meinen treuen RTL-SDR Blog V3 benutzt.
 

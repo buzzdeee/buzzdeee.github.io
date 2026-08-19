@@ -60,12 +60,12 @@ seo:
   # ...
 ---
 
-In my [previous post](/en/zigbee-sniffing-on-openbsd/), we looked at sniffing Zigbee traffic using the older [TI CC2531](https://www.ebay.de/itm/404481824304?var=674447321503&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=TICC2531&toolid=10001&mkevt=1). While great for learning, it's not the hardware you want running your actual home. The CC2531 is excellent for sniffing because it simply runs the sniffer firmware—that is what I used it for, and that is what I will keep using it for.
+In my [previous post](/en/zigbee-sniffing-on-openbsd/), we looked at sniffing Zigbee traffic using the older [TI CC2531](https://www.ebay.de/itm/404481824304?var=674447321503&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=TICC2531&toolid=10001&mkevt=1#affiliate). While great for learning, it's not the hardware you want running your actual home. The CC2531 is excellent for sniffing because it simply runs the sniffer firmware—that is what I used it for, and that is what I will keep using it for.
 
-Following my own advice, I bought myself a **[Sonoff Dongle Max](https://sonoff.tech/en-de/products/sonoff-dongle-max-zigbee-thread-poe-dongle-dongle-m)** on [eBay](https://www.ebay.de/itm/388971238285?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xBWFdbfFYp4er2kjyno9qmO593oK669JSSjjTgWvi6tTRNzvYtGUbb3EfOMwwSyITjSDhxkDoFtcCFaXt%2BLbbqQavhhYkKezX99g2LMSYO2N5S0ljwoKg1gnLanibPKbepX68fje0f75JFx9r0FqrNHOksW%2BWM%2BVAIttAcpDD38IEYQS3XIc7r0yK3BY7TAV6w%3D&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Sonoff&toolid=10001&mkevt=1) to act as a proper **Zigbee Coordinator**. In that previous post, I could only see a few Zigbee and other 802.15.4 devices from neighbors, but where is the fun in that? It got me curious and looking to get my own home automation started!
+Following my own advice, I bought myself a **[Sonoff Dongle Max](https://sonoff.tech/en-de/products/sonoff-dongle-max-zigbee-thread-poe-dongle-dongle-m)** on [eBay](https://www.ebay.de/itm/388971238285?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xBWFdbfFYp4er2kjyno9qmO593oK669JSSjjTgWvi6tTRNzvYtGUbb3EfOMwwSyITjSDhxkDoFtcCFaXt%2BLbbqQavhhYkKezX99g2LMSYO2N5S0ljwoKg1gnLanibPKbepX68fje0f75JFx9r0FqrNHOksW%2BWM%2BVAIttAcpDD38IEYQS3XIc7r0yK3BY7TAV6w%3D&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Sonoff&toolid=10001&mkevt=1#affiliate) to act as a proper **Zigbee Coordinator**. In that previous post, I could only see a few Zigbee and other 802.15.4 devices from neighbors, but where is the fun in that? It got me curious and looking to get my own home automation started!
 
 {{< admonition type="tip" title="eBay" >}}
-On [eBay](https://www.ebay.de/itm/388971238285?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xBWFdbfFYp4er2kjyno9qmO593oK669JSSjjTgWvi6tTRNzvYtGUbb3EfOMwwSyITjSDhxkDoFtcCFaXt%2BLbbqQavhhYkKezX99g2LMSYO2N5S0ljwoKg1gnLanibPKbepX68fje0f75JFx9r0FqrNHOksW%2BWM%2BVAIttAcpDD38IEYQS3XIc7r0yK3BY7TAV6w%3D&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Sonoff&toolid=10001&mkevt=1) you have the same price as in their shop, but you can make use of the "Preisvorschlag senden" to get it a few Euros cheaper. Worked for me ;)
+On [eBay](https://www.ebay.de/itm/388971238285?amdata=enc%3AAQALAAAAoGfYFPkwiKCW4ZNSs2u11xBWFdbfFYp4er2kjyno9qmO593oK669JSSjjTgWvi6tTRNzvYtGUbb3EfOMwwSyITjSDhxkDoFtcCFaXt%2BLbbqQavhhYkKezX99g2LMSYO2N5S0ljwoKg1gnLanibPKbepX68fje0f75JFx9r0FqrNHOksW%2BWM%2BVAIttAcpDD38IEYQS3XIc7r0yK3BY7TAV6w%3D&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=Sonoff&toolid=10001&mkevt=1#affiliate) you have the same price as in their shop, but you can make use of the "Preisvorschlag senden" to get it a few Euros cheaper. Worked for me ;)
 {{< /admonition >}}
 
 ## Hardware: The Sonoff Dongle Max
@@ -91,7 +91,7 @@ ucom0 at uslcom0 portno 0: usb1.1.00002.0
 {{< /highlight >}}
 
 {{< admonition type="tip" title="Why PoE?" >}}
-While USB works for testing, it forces your coordinator to live next to your server (likely in a basement or a rack). Using **Zigbee over Ethernet** allows you to place the dongle centrally in your home via a single PoE cable for both power and data. If you, unlike myself, don't have a switch that supports PoE natively, you can get a cheap [PoE Injector](https://www.ebay.de/sch/i.html?_nkw=PoE+Injector&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=PoeInjector&toolid=10001&mkevt=1) on eBay as well.
+While USB works for testing, it forces your coordinator to live next to your server (likely in a basement or a rack). Using **Zigbee over Ethernet** allows you to place the dongle centrally in your home via a single PoE cable for both power and data. If you, unlike myself, don't have a switch that supports PoE natively, you can get a cheap [PoE Injector](https://www.ebay.de/sch/i.html?_nkw=PoE+Injector&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=PoeInjector&toolid=10001&mkevt=1#affiliate) on eBay as well.
 {{< /admonition >}}
 
 
@@ -307,7 +307,7 @@ printf '%02x' 104 73 101 15 20 56 102 28 132 77 211 116 109 134 9 20 && echo
 # Output: 6849650f1438661c844dd3746d860914
 {{< /highlight >}}
 
-Then using my [TI CC 2531](https://www.ebay.de/itm/404481824304?var=674447321503&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=TICC2531&toolid=10001&mkevt=1) I can use `whsniff` which made it just Today into the OpenBSD ports tree, to feed IEEE802.15.4 traffic into Wireshark:
+Then using my [TI CC 2531](https://www.ebay.de/itm/404481824304?var=674447321503&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=TICC2531&toolid=10001&mkevt=1#affiliate) I can use `whsniff` which made it just Today into the OpenBSD ports tree, to feed IEEE802.15.4 traffic into Wireshark:
 {{< highlight bash >}}
 sudo pkg_add -i whsniff wireshark
 sudo whsniff -c 25 | wireshark -k -i -

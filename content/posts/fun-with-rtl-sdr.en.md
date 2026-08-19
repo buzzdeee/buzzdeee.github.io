@@ -68,7 +68,7 @@ Following up on my previous post about [Bridging the Gap: Bringing Modern Kismet
 
 The **[RTL-SDR](https://www.rtl-sdr.com/)** is the gateway drug into this world. Originally designed as cheap DVB-T (digital TV) USB dongles, hackers discovered that the Realtek RTL2832U chip could be pushed into a "raw data" mode. This allows it to receive a wide range of frequencies - typically from **500 kHz to 1.7 GHz**.
 
-The RTL-SDR Blog V3 and the most recent V4, as well as antennas and cables can be easily found on [eBay](https://www.ebay.de/sch/i.html?_nkw=RTL+SDR+BLOG&_sacat=0&_from=R40&_trksid=p2334524.m570.l1313&LH_TitleDesc=0&_odkw=RTL+SDR&_osacat=0&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=RTLSDR&toolid=10001&mkevt=1)
+The RTL-SDR Blog V3 and the most recent V4, as well as antennas and cables can be easily found on [eBay](https://www.ebay.de/sch/i.html?_nkw=RTL+SDR+BLOG&_sacat=0&_from=R40&_trksid=p2334524.m570.l1313&LH_TitleDesc=0&_odkw=RTL+SDR&_osacat=0&mkcid=1&mkrid=707-53477-19255-0&siteid=77&campid=5339147890&customid=RTLSDR&toolid=10001&mkevt=1#affiliate)
 
 In the article I use a RTL-SDR Blog V3.
 

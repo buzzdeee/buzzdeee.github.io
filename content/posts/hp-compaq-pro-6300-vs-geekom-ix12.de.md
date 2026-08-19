@@ -232,7 +232,7 @@ wsdisplay0: screen 1-5 added (std, vt100 emulation)
 
 ## Der Neue im Office
 
-Ein Ersatz musste her! Die Zielsetzung war klar umrissen: **Fanless (passiv gekühlt), stromsparend und ausreichend stark für den OpenBSD-Alltag.** Nach einigem Suchen fiel die Wahl auf den **[Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F)**. Ich habe über die letzten Jahre diverse Rechner und Switches ausgetauscht, das letzte verbliebene Gerät mit Lüfter, das regelmäßig eingeschaltet ist, ist mein Desktop. Ein "lüfterloses" Büro ist eine feine Sache, frage mich wie ich das früher ausgehalten habe, zeitweise auch mit Rechnern mit kaputten Lüftern, die ganz schön genervt hatten. Vielleicht wird man aber auch einfach nur älter ;)
+Ein Ersatz musste her! Die Zielsetzung war klar umrissen: **Fanless (passiv gekühlt), stromsparend und ausreichend stark für den OpenBSD-Alltag.** Nach einigem Suchen fiel die Wahl auf den **[Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F#affiliate)**. Ich habe über die letzten Jahre diverse Rechner und Switches ausgetauscht, das letzte verbliebene Gerät mit Lüfter, das regelmäßig eingeschaltet ist, ist mein Desktop. Ein "lüfterloses" Büro ist eine feine Sache, frage mich wie ich das früher ausgehalten habe, zeitweise auch mit Rechnern mit kaputten Lüftern, die ganz schön genervt hatten. Vielleicht wird man aber auch einfach nur älter ;)
 
 ---
 
@@ -268,16 +268,17 @@ Man drehe das Gerät auf den Kopf, entferne die 4 Schräubchen, und schon lässt
 
 Für ein vollwertiges System als Desktop und zum Kompilieren von Ports durfte es etwas mehr sein. Daher bekam der Mini-PC ein Upgrade:
 
-* **Arbeitsspeicher:** Aufgerüstet von 8 GB auf **[32 GB RAM](https://ebay.us/fmXn5I)**
+* **Arbeitsspeicher:** Aufgerüstet von 8 GB auf **[32 GB RAM](https://ebay.us/fmXn5I#affiliate)**
 * **Speicher:** Ersetzung der 256 GB SSD durch ein **512 GB Modell**
 
-Um den Einfluss des Speichermediums zu prüfen, kamen zwei M.2 SATA SSDs zum Test: eine **[Verbatim Vi560](https://ebay.us/JKLBbx)** und eine **[Samsung EVO SSD 860](https://ebay.us/AjyRqF)**. Beide nutzen die SATA-Schnittstelle, unterscheiden sich aber im Controller und Cache-Verhalten unter anhaltender I/O-Last.
+Um den Einfluss des Speichermediums zu prüfen, kamen zwei M.2 SATA SSDs zum Test: eine **[Verbatim Vi560](https://ebay.us/JKLBbx#affiliate)** und eine **[Samsung EVO SSD 860](https://ebay.us/AjyRqF#affiliate)**. Beide nutzen die SATA-Schnittstelle, unterscheiden sich aber im Controller und Cache-Verhalten unter anhaltender I/O-Last.
 
 {{< admonition type="note" title="Zwei M.2 SATA-Disks im Vergleich" open=true >}}
-Wichtig zu erwähnen: **Beide Testkandidaten sind M.2-SATA-SSDs.** Obwohl sie denselben Formfaktor und dieselbe Bus-Schnittstelle nutzen, zeigen sich im Detai
-l spannende Unterschiede:
-* **[Verbatim Vi560 (M.2 SATA)](https://ebay.us/JKLBbx):** Ein preiswerter Einsteiger-Allrounder. Bei kurzen Zugriffen solide, gerät das schlankere Cache-Management bei anhaltend hohen Schreib- und Lesezyklen (wie beim Kompilieren) jedoch schneller an Leistungsgrenzen.
-* **[Samsung 860 EVO SSD (M.2 SATA)](https://ebay.us/AjyRqF):** Ein bewährter Klassiker im M.2-Gewand. Dank eines ausgereiften Controllers und eines besseren DRAM-Caches hält sie die Transferraten auch unter dauerhafter I/O-Last extrem stabil.
+Wichtig zu erwähnen: **Beide Testkandidaten sind M.2-SATA-SSDs.** Obwohl sie denselben Formfaktor und dieselbe Bus-Schnittstelle nutzen, zeigen sich im Detail spannende Unterschiede:
+
+* **[Verbatim Vi560 (M.2 SATA)](https://ebay.us/JKLBbx#affiliate)** Ein preiswerter Einsteiger-Allrounder. Bei kurzen Zugriffen solide, gerät das schlankere Cache-Management bei anhaltend hohen Schreib- und Lesezyklen (wie beim Kompilieren) jedoch schneller an Leistungsgrenzen.
+
+* **[Samsung 860 EVO SSD (M.2 SATA)](https://ebay.us/AjyRqF#affiliate)** Ein bewährter Klassiker im M.2-Gewand. Dank eines ausgereiften Controllers und eines besseren DRAM-Caches hält sie die Transferraten auch unter dauerhafter I/O-Last extrem stabil.
 {{< /admonition >}}
 
 RAM und SSDs gibts preiswert bei eBay, siehe entsprechende Links oben.
@@ -594,13 +595,13 @@ Ein gemischter Build-Prozess mit viel Verzeichnisstruktur-, Skript- und Datentr�
 | **Geekom IX12** (Samsung SSD) | **6m 08.76s** | 6m 44.93s | 1m 19.31s |
 | **Geekom IX12** (Verbatim SSD) | **6m 37.05s** | 6m 34.27s | 1m 21.61s |
 
-Hier gewinnt der [Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F) haushoch: Er nimmt dem alten HP **fast 2,5 Minuten** ab. Die modernere Plattform, schnellerer Arbeitsspeicher, die neuere Bus-Architektur und die Samsung SSD (welche der Verbatim nochmals knapp 30 Sekunden abnimmt) sorgen für einen ordentlichen I/O-Vorteil.
+Hier gewinnt der **[Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F#affiliate)** haushoch: Er nimmt dem alten HP **fast 2,5 Minuten** ab. Die modernere Plattform, schnellerer Arbeitsspeicher, die neuere Bus-Architektur und die Samsung SSD (welche der Verbatim nochmals knapp 30 Sekunden abnimmt) sorgen für einen ordentlichen I/O-Vorteil.
 
 ---
 
 ## Fazit & Ausblick
 
-Der Umstieg vom alten HP Compaq Pro auf den [Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F) war ein voller Erfolg! Als DVD Laufwerksersatz, für den Fall der Fälle, gabs letztens noch ein mobiles DVD Laufwerk als 3EUR Schnäppchen vom Flohmarkt ;)
+Der Umstieg vom alten HP Compaq Pro auf den **[Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F#affiliate)** war ein voller Erfolg! Als DVD Laufwerksersatz, für den Fall der Fälle, gabs letztens noch ein mobiles DVD Laufwerk als 3EUR Schnäppchen vom Flohmarkt ;)
 
 * **Lautlos:** Absolute Stille am Schreibtisch – kein andauerndes Lüftergeräusch mehr!
 * **Effizient:** Der Stromverbrauch ist im Vergleich zur alten Ivy-Bridge-Plattform verschwindend gering.

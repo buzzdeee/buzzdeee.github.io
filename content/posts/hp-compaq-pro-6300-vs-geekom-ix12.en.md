@@ -214,7 +214,7 @@ wsdisplay0: screen 1-5 added (std, vt100 emulation)
 
 ## The New Guy in the Office
 
-A replacement had to be found! The objectives were clearly defined: **Fanless (passively cooled), energy-efficient, and sufficiently powerful for daily OpenBSD use.** After some searching, the choice fell on the **[Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F)**. Over the last few years, I have replaced various computers and switches; the last remaining device with a fan that is regularly switched on is my desktop. A "fanless" office is a fine thing; I wonder how I put up with it before, at times even with computers with broken fans that were quite annoying. But perhaps one just gets older ;)
+A replacement had to be found! The objectives were clearly defined: **Fanless (passively cooled), energy-efficient, and sufficiently powerful for daily OpenBSD use.** After some searching, the choice fell on the **[Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F#affiliate)**. Over the last few years, I have replaced various computers and switches; the last remaining device with a fan that is regularly switched on is my desktop. A "fanless" office is a fine thing; I wonder how I put up with it before, at times even with computers with broken fans that were quite annoying. But perhaps one just gets older ;)
 
 ---
 
@@ -250,15 +250,15 @@ Turn the device upside down, remove the 4 small screws, and the cover can alread
 
 For a full-fledged system as a desktop and for compiling ports, it needed to be a bit more. Therefore, the mini-PC received an upgrade:
 
-* **Memory (RAM):** Upgraded from 8 GB to **[32 GB RAM](https://ebay.us/fmXn5I)**
+* **Memory (RAM):** Upgraded from 8 GB to **[32 GB RAM](https://ebay.us/fmXn5I#affiliate)**
 * **Storage:** Replacement of the 256 GB SSD with a **512 GB model**
 
-To check the influence of the storage medium, two M.2 SATA SSDs were used for testing: a **[Verbatim Vi560](https://ebay.us/JKLBbx)** and a **[Samsung EVO SSD 860](https://ebay.us/AjyRqF)**. Both use the SATA interface but differ in controller and cache behavior under sustained I/O load.
+To check the influence of the storage medium, two M.2 SATA SSDs were used for testing: a **[Verbatim Vi560](https://ebay.us/JKLBbx#affiliate)** and a **[Samsung EVO SSD 860](https://ebay.us/AjyRqF#affiliate)**. Both use the SATA interface but differ in controller and cache behavior under sustained I/O load.
 
 {{< admonition type="note" title="Comparing Two M.2 SATA Disks" open=true >}}
 Important to mention: **Both test candidates are M.2 SATA SSDs.** Although they use the same form factor and the same bus interface, exciting differences emerge in detail:
-* **[Verbatim Vi560 (M.2 SATA)](https://ebay.us/JKLBbx):** An affordable entry-level all-rounder. Solid for short accesses, its leaner cache management reaches performance limits more quickly during sustained high write and read cycles (such as when compiling).
-* **[Samsung 860 EVO SSD (M.2 SATA)](https://ebay.us/AjyRqF):** A proven classic in M.2 guise. Thanks to a mature controller and a better DRAM cache, it keeps transfer rates extremely stable even under continuous I/O load.
+* **[Verbatim Vi560 (M.2 SATA)](https://ebay.us/JKLBbx#affiliate):** An affordable entry-level all-rounder. Solid for short accesses, its leaner cache management reaches performance limits more quickly during sustained high write and read cycles (such as when compiling).
+* **[Samsung 860 EVO SSD (M.2 SATA)](https://ebay.us/AjyRqF#affiliate):** A proven classic in M.2 guise. Thanks to a mature controller and a better DRAM cache, it keeps transfer rates extremely stable even under continuous I/O load.
 {{< /admonition >}}
 
 Memory and SSD are cheap on eBay, see related links above.
@@ -576,13 +576,13 @@ A mixed build process with plenty of directory structure, script, and disk I/O:
 | **Geekom IX12** (Samsung SSD) | **6m 08.76s** | 6m 44.93s | 1m 19.31s |
 | **Geekom IX12** (Verbatim SSD) | **6m 37.05s** | 6m 34.27s | 1m 21.61s |
 
-Here, the [Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F) wins hands down: it beats the old HP by **almost 2.5 minutes**. The more modern platform, faster memory, newer bus architecture, and the Samsung SSD (which itself shaves just under 30 seconds off the Verbatim's time) ensure a decent I/O advantage.
+Here, the [Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F#affiliate) wins hands down: it beats the old HP by **almost 2.5 minutes**. The more modern platform, faster memory, newer bus architecture, and the Samsung SSD (which itself shaves just under 30 seconds off the Verbatim's time) ensure a decent I/O advantage.
 
 ---
 
 ## Conclusion & Outlook
 
-The switch from the old HP Compaq Pro to the [Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F) was a complete success! As a replacement for the DVD drive, just in case, I recently picked up a mobile DVD drive as a 3 EUR bargain from a flea market ;)
+The switch from the old HP Compaq Pro to the [Geekom IX12](https://www.awin1.com/cread.php?awinmid=32589&awinaffid=3025379&ued=https%3A%2F%2Fwww.geekom.de%2Fgeekom-ix12-luefterloser-mini-pc%2F#affiliate) was a complete success! As a replacement for the DVD drive, just in case, I recently picked up a mobile DVD drive as a 3 EUR bargain from a flea market ;)
 
 * **Silent:** Absolute silence at the desk – no more continuous fan noise!
 * **Efficient:** Power consumption is vanishingly small compared to the old Ivy Bridge platform.
