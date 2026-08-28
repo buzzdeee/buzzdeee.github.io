@@ -71,7 +71,7 @@ Beyond new imports, there were also crucial stability fixes. **SASANO Takayoshi 
 * `comms/liquid-dsp`: Update 1.7.0 -> 1.8.2
 * `comms/rtl-sdr` & `comms/soapy-rtlsdr` *(Stability fixes)*
 
-Read more about RTL-SDR in my previous blog post [here](/fun-with-rtl-sdr/).
+Read more about RTL-SDR in my previous blog post [here](/en/fun-with-rtl-sdr/).
 
 ---
 
