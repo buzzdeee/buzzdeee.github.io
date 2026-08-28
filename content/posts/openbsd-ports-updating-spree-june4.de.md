@@ -9,7 +9,7 @@ license: "MIT"
 images: ["/images/openbsd-ports-updating-spree-june4.png"]
 
 tags: ["OpenBSD", "Ports", "GNUstep", "LLVM", "SDR", "Ruby", "Security"]
-categories: ["Tech", "Porting"]
+categories: ["OpenBSD", "Tech", "Porting"]
 
 featuredImage: "/images/openbsd-ports-updating-spree-june4.png"
 featuredImagePreview: "/images/openbsd-ports-updating-spree-june4.png"
