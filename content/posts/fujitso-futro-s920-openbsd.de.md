@@ -60,7 +60,7 @@ seo:
 
 Über einige Jahre hinweg liefen bei mir einige Fujitsu Futro S920 als verlässliche, lautlose Server für verschiedene Netzwerkdienste im lokalen Netz. Mittlerweile habe ich die Infrastruktur schrittweise erneuert und die alten Instanzen durch neuere Futro S9010 ersetzt. 
 
-Bevor die ausgemusterten S920-Geräte demnächst auf [eBay](https://ebay.us/nn1zUq) den Besitzer wechseln, folgt hier eine sachliche Zusammenfassung zu Hardware, Stromverbrauch und OpenBSD-Kompatibilität. Auch wenn die Architektur nicht mehr ganz taufrisch ist, leisten diese Thin Clients als stromsparende Nodes nach wie vor gute Dienste.
+Bevor die ausgemusterten S920-Geräte demnächst auf [eBay](https://ebay.us/nn1zUq#affiliate) den Besitzer wechseln, folgt hier eine sachliche Zusammenfassung zu Hardware, Stromverbrauch und OpenBSD-Kompatibilität. Auch wenn die Architektur nicht mehr ganz taufrisch ist, leisten diese Thin Clients als stromsparende Nodes nach wie vor gute Dienste.
 
 <figure class="ma0 w-75">
   <img src="/images/futro-s920.jpg" alt="Fujitsu Futro S920 Front- und Rückansicht">
@@ -258,5 +258,5 @@ Aufgrund der Leistungsdaten und des geringen Stromverbrauchs deckte der S920 bei
 
 Der Wechsel auf den Futro S9010 bringt vor allem mehr Rechenleistung, neuere CPU-Instruktionen und eine modernere Plattform mit. Dennoch bleibt der Futro S920 eine brauchbare, geräuschlose Hardware für minimalistische Setups, OpenBSD-Einstiege oder einfache Netzwerk-Server. 
 
-Wer gebraucht nach einer günstigen Basis mit nativen seriellen Ports und geringem Strombedarf sucht, wird man schnell bei [eBay](https://ebay.us/UlXc9q) fündig, mit unterschiedlicher Ausstattung. Man erhält mit dem S920 ein solides Stück Hardware zum kleinen Preis. 
+Wer gebraucht nach einer günstigen Basis mit nativen seriellen Ports und geringem Strombedarf sucht, wird man schnell bei [eBay](https://ebay.us/UlXc9q#affiliate) fündig, mit unterschiedlicher Ausstattung. Man erhält mit dem S920 ein solides Stück Hardware zum kleinen Preis. 
 
