@@ -1,0 +1,46 @@
+Letzten Jahreswechsel, mein Ältester fing an sich für die Modelleisenbahn
+zu interessieren, die verpackt in Koffern und Kisten steht. Seitdem habe
+ich Rocrail wieder reaktiviert auf OpenBSD, hatte XTrkCad wieder ausgegraben,
+um Gleispläne zu schmieden, und meine gute alte OpenDCC Z1 repariert,
+der Spannungswandler musste wieder angelötet werden ;)
+
+Soweit so gut, in einigen Modellbahnzeitschriften kam ich dann auf 3D Druck,
+ein Thema das mich zugegebenermaßen schon interessiert hat, aber ich bisher
+noch keinen Guten Grund gefunden hatte, mir auch einen Zuzulegen.
+
+Ich hatte auch nur eine Vage idee, wie das mit dem 3D drucken, nach etwas
+Recherche, fand ich raus, das PrusaSlicer das Tool der Wahl ist, und es 
+im OpenBSD ports tree als package verfügbar ist.
+
+Soweit so gut, die Software Seite wäre geklärt, aber was mit der Hardware. 
+
+Im Artikel wurde von Prusa MK4S erwähnt. 
+Nach einigem Recherchen zum Drucker, erschien mir dann der MK4S, auch als
+ganz gute Wahl:
+ * OpenSource Drucker
+ * kann man als Bausatz bestellen (Was für ein Spass mit den Kindern)
+   * Vor allem den dazugehörigen Gummibärchen
+   * super Anleitung: https://help.prusa3d.com/de/manual/original-prusa-mk4s-kit-assembly_2167
+ * Als set mit MMU3 und Gehäuse sollte es dann sein
+
+Beim Aufbau des Gehäuses, fehlte ein 1m Schlauch, ein Chat mit Online Support
+um Mitternacht, hat das geklärt, und nur wenige Tage später kam ein Paket
+mit dem entsprechenden Teil. 
+
+Alles in allem, hat der Aufbau somit ca. anderthalb Wochen gedauert.
+
+Dann konnte der endlich angeschaltet werden, Ein großer Moment, da man erst am Ende
+weiß, ob alles auch wirklich funktioniert. Aber dank der guten Anleitung, war ich
+sehr zuversichtlich.
+
+Dann erstmal Firmware update via USB stick, und MMU update via PrusaSlicer und USB Kabel 
+Verbindung.
+
+Dann konnte man auch schon losdrucken!
+
+Prusa Slicer Eingerichtet, hat ein wenig gedauert herauszufinden wie es funktioniert,
+aber dann konnte es mit dem Drucken auch schon losgehen. Mit eingelegtem USB stick, 
+geht das senden an den Drucker, direkt nach dem Slicen. Super!
+
+
+Weitere Erfahrungsberichte werden folgen.

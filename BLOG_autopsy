@@ -1,0 +1,117 @@
+Ende letzten Jahres habe ich eine Anzahl DFIR related Security Ports
+Maintainerschaft übernommen. Diese dann Anfang des Jahres geupdated,
+speziell darunter Sleuthkit und Plaso, das viele neue Abhängigkeiten mit sich brachte.
+
+Dann im Sommer war ich 3 Wochen auf Reha. Eigentlich wollte ich 
+ein AI Kurs auf Kaggle machen, fand dann aber schnell, das ist
+todlangweilig, ich brauch was anderes, also Autopsy nach OpenBSD
+zu portieren, hatte ich schon seit langer Zeit auf meiner TODO Liste.
+
+Gute Gelegenheit, da mal anzufangen. 
+Die Odyssee begann, mein Java Wissen war nie Überragennd, und das 
+bisschen was da ist, ist verdammt "rostig":
+Also, was kann schon schief gehen ;)
+
+Java, build once, runs everywhere. Was für ein Witz ;)
+
+Durch viele Fehlermeldungen und Warnmeldungen, bis mir dann so einiges klar wurde:
+ * Das Autopsy Programm zum Runterladen: 
+   * ist hauptsächlich für Windows ausgelegt
+   * enthält eine Tonne von Windows kompilierten Binaries und DLLs
+     * z.B. Plaso, 7-Zip, Testdisk, gstreamer, etc.
+   * diese sind in der Regel ziemlich outdated
+   * einiges an Linux binaries/shared libraries dabei
+   * diverse gebundelte JARs auch in der Regel nur mit Windows/Linux binaries/shared libs
+     * dazu zählten:
+       * sqlite-jdbc
+       * openjfx
+       * sevenzipjbinding
+       * sleuthkit
+     * oft auch ziemlich outdated, oder speziell gepatchte Versionen (sevenzipjbinding)
+
+Die Frage war, kann ich Autopsy hinbiegen, um die externen Programme zu benutzen,
+bzw. die extern gebauten, mit OpenBSD shared libraries gebundelten zu benutzen, anstatt
+die eigenen?
+
+Eine wilde Portierungs-Orgie folgte, Schritt für Schritt, habe ich dann folgende 
+Abhängigkeiten portiert und zum Laufen bekommen:
+
+ * databases/sqlite-jdbc
+ * archivers/sevenzipjbinding
+ * graphics/openjfx/21
+ * sysutils/sleuthkit (Java JNI Binding mit im Paket integriert/installiert)
+ * sysutils/prefetch-parser
+
+Die Meissten davon mit eingien Patches, da sie auch erst darauf "vorbereitet" werden mussten,
+auf OpenBSD zu bauen und auch zu laufen. Für einiges, speziell zu nenen openjfx, habe ich mir 
+kleine Test Java Programme geschrieben, um zu sehen, ob openjfx generell funktioniert, oder 
+ob mein Fehler in Autopsy liegt. 
+
+Am Ende der 3 Wochen, hatte ich dann ein ziemlich Frankensteined ;) Autopsy auf OpenBSD am laufen,
+aber folgendes geht:
+
+ * yara Ingest Modul: benutzt system yara (Original Autopsy Only supports Windows)
+ * opencv: nutzt system opencv (Original Autopsy nutzt opencv2, OpenBSD hat opencv4)
+ * Plaso ingest Modul nutzt Plaso vom System (Original Autopsy Only supports Windows)
+ * Embedded Files Modul: Funtzt mit sevenzipjbinding
+ * use system testdisk/photorec
+ * Recent Activity Ingest Module: nutzt prefetch-parser vom System
+ * Timeline View: durch OpenJFX port (WebKit part)
+ * Abspielen von Videos/Audio (durch OpenJFX media part)
+ * Solr (Keyword Indexer schreibt logs in ~/.solr/... )
+
+Dann im September bin ich endlich wieder dazu gekommen, mir das genauer anzuschauen, und 
+speziell die neuen Ports/Abhängigkeiten aufzuräumen, so das sie gut sind, um im Ports Tree
+importiert zu werden.
+
+Diverses Feedback auf der ports@ Mailingliste zu den einzelnen Ports:
+sysutils/sleuthkit
+ * Die Frage war Subpackge oder Nicht Subpackage, ich hatte es erst mit Subpackage, 
+   opencv,-java als Vorlage. Nach diversem Feedback von sthen@ gegen Subpackage entschieden,
+   und einfach zum -main Paket hinzugefügt.
+
+databases/sqlite-jdbc
+ * ported by me, but then was pointed out, there was an earlier attempt, from earlier this year
+ * the old version placed the .jars unversioned in ${MODJAVA_JAR_DIR}, with that, it was recommended,
+   to do the same with all the others so my attempts for the libraries below, had to be reworked
+ * the old version didn't built, kurt@ fixed it, and I adapted Autopsy und sleuthkit entsprechend
+
+archivers/sevenzipjbinding
+ * erst das offizielle sevenzipjbinding portiert, nur um dann festzustellen, das Autopsy eine 
+   custom gepatche Version benötigt. Zum Glück war das umzustellen kein großer Akt
+graphics/openjfx/21
+ * das war der größte Roadblock, speziell den Webkit Teil von openjfx zu bauen. Benötigte eine 
+   Menge an patches. Das war's dann aber Wert, die Timeline funtzt.
+
+sysutils/prefetch-parser
+ * NEW used in Recent Activity ingest module
+ * relat. Einfach, speziell da sysutils/libscca schon im Ports tree ist.
+
+Nach vielem Feedback auf der Mailingliste zu den einzelnen Ports, speziell von kurt@ der die
+JDK Ports Maintained, folgende Änderungen zu meinen Versionen:
+
+ * nichts in ports/java -> alles was ich vorher dort hatte, in entsprechende andere Subkategorien
+ * .jar Dateien in $MODJAVA_JAR_DIR anstelle in separaten Unterverzeichnissen
+ * Es ist nicht nötig shared libraries zu installieren, da sie schon gebundelt in den entsprechenden .jar sind 
+
+Daraufhin musste Autopsy noch wieder entsprechend angepasst werden, was kleine Veränderungen 
+in der Autopsy Ports Makefile nach sich zog, und am Ende dann aber auch vereinfachungen in der autopsy.conf
+
+
+Fazit und Ausblick:
+Am Anfang hatte ich keine Ahnung, wie weit ich es hier bringen würde, ob überhaupt etwas "brauchbares/lauffähiges" am Ende
+rauskommen würde. Um aus Fehlermeldungen schlau zu werden, mir ideen für Fixes etc. zu holen, waren LLMs am Ende sehr
+hilfreich, um alles am Ende dann doch lauffähig zu bekommen, und soweit ich sehen kann mit:
+ * besserer Unterstützung als Linux (diverse Ingest Module die nur unter Windows verfügbar sind)
+ * "modernere" Abhängigkeiten
+   * gebundeltes opencv 2 vs. opencv 4 von OpenBSD ports tree
+   * Plaso von 2018 oder so, vs. Plaso von "letzte Version" von 2026 ;)
+   * sleuthkit letzte Version
+   * sqlite-jdbc letzte version
+
+Wie auch immer, diese Unternehmung hat sich auf jeden Fall geloght, Nich zuletzt hat sie mir eine tiefen Einblick in Autopsy gegeben, die mir sonst vorenthalten geblieben wären, wenn ich es einfach nur unter Windows genutzt hätte. 
+
+Last but not least, bloß weil etwas zu groß und unmöglich erscheint, und etwas nicht beim ersten, zweiten, dritten, vierten, .... mal funktioniert, kein Grund aufzugeben. Es ist wie beim Skaten, probieren, probieren, probieren, dabei sich selbst beobachten, reflektieren, und weiter probieren, und wenn man hinfällt, aufstehen, und gleich nochmal probieren.
+
+Diverse Ingest Module sind immer noch nur für Windows, bei Zeit und Gelegenheit, werd ich wohl mal schauen, 
+ob man da nicht noch mehr portieren kann.
