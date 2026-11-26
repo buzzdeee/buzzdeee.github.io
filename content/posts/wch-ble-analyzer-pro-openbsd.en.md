@@ -5,7 +5,7 @@ subtitle: "Capture BTLE advertising on channels 37, 38, and 39 – using just a 
 description: "Hands-on report on the WCH BLE Analyzer Pro on OpenBSD: BTLE advertising channels, Kismet data source, wch_capture, OpenBSD ports@ review, and PCAP/Wireshark analysis."
 date: 2026-11-26T22:02:18+01:00
 lastmod: 2026-11-26T22:02:18+01:00
-draft: true
+draft: false
 images:
   - "/images/WCH_BLE_OpenBSD.jpg"
   - "/images/wch-ble-analyzer-pro-front.jpg"
